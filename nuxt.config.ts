@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   pages: true,
   modules: [
     '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
   ],
   buildModules: [
     '@nuxt/typescript-build',
