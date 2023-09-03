@@ -2,4 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
+  modules: [
+    '@nuxtjs/eslint-module',
+  ],
+  buildModules: [
+    '@nuxt/typescript-build',
+  ],
 });
