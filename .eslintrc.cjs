@@ -25,10 +25,10 @@ module.exports = {
         "prettier/prettier": [
           "error",
           {
-            "endOfLine": "auto"
-          }
-        ]
-      }
+            endOfLine: "auto",
+          },
+        ],
+      },
     },
     {
       files: ["pages/**/*.vue", "./app.vue"],
