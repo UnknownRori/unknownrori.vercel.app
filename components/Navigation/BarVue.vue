@@ -24,6 +24,9 @@ const routes = [
       </IconBadgeVue>
     </header>
 
-    <NavigationListVue :links="routes" />
+    <div class="flex flex-row justify-center items-center gap-4">
+      <NavigationListVue :links="routes" />
+      <ClientSettingsVue />
+    </div>
   </nav>
 </template>
