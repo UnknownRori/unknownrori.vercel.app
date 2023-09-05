@@ -8,10 +8,10 @@ const clock = useRealtimeClock();
 <template>
   <div class="flex flex-row gap-4 m-8">
     <section>
-      <CardVue class="flex flex-col justify-center font-light w-[18vw]">
+      <CardVue class="flex flex-col justify-center font-light w-[18vw] bg-opacity-50">
         <!-- TODO : Change color -->
         <span
-          class="bg-gray-700 hover:bg-purple-800 duration-300 transition-colors px-4 py-1 rounded-t-md"
+          class="bg-cod-gray-900 hover:bg-cod-gray-700 bg-opacity-50 duration-500 transition-colors px-4 py-1 rounded-t-md"
           >Profile</span
         >
         <div class="flex flex-col gap-2 p-4">
@@ -117,10 +117,9 @@ const clock = useRealtimeClock();
     </section>
 
     <section>
-      <CardVue class="flex flex-col gap-2">
-        <!-- TODO : Change color -->
+      <CardVue class="flex flex-col gap-2 bg-opacity-50">
         <span
-          class="bg-gray-700 hover:bg-purple-800 duration-300 transition-colors px-4 py-1 rounded-t-md"
+          class="bg-cod-gray-900 hover:bg-cod-gray-700 bg-opacity-50 duration-300 transition-colors px-4 py-1 rounded-t-md"
           >About</span
         >
         <main class="p-4">

@@ -78,7 +78,7 @@ const isOpen = ref(false);
               <select
                 id="display-type"
                 name="display-type"
-                class="bg-slate-700 rounded p-2 shadow"
+                class="bg-cod-gray-800 bg-opacity-80 rounded p-2 shadow"
               >
                 <option value="Web">Web</option>
                 <option value="Terminal" disabled>Terminal</option>
@@ -108,7 +108,7 @@ const isOpen = ref(false);
               <select
                 id="colorscheme"
                 name="colorscheme"
-                class="bg-slate-700 rounded p-2 shadow"
+                class="bg-cod-gray-800 bg-opacity-80 rounded p-2 shadow"
               >
                 <option value="dark-default">Dark Default</option>
                 <option value="light-default" disabled>Light Default</option>
