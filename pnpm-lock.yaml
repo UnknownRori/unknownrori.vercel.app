@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  moment:
+    specifier: ^2.29.4
+    version: 2.29.4
+
 devDependencies:
   "@nuxt/devtools":
     specifier: latest
@@ -41,6 +46,9 @@ devDependencies:
   nuxt:
     specifier: ^3.7.0
     version: 3.7.0(eslint@8.48.0)(typescript@5.2.2)
+  nuxt-svgo:
+    specifier: ^3.5.0
+    version: 3.5.0
   postcss:
     specifier: ^8.4.29
     version: 8.4.29
@@ -8769,6 +8777,14 @@ packages:
     engines: { node: ">=4" }
     dev: true
 
+  /mini-svg-data-uri@1.4.4:
+    resolution:
+      {
+        integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==,
+      }
+    hasBin: true
+    dev: true
+
   /minimatch@3.0.8:
     resolution:
       {
@@ -8945,6 +8961,13 @@ packages:
       pkg-types: 1.0.3
       ufo: 1.3.0
     dev: true
+
+  /moment@2.29.4:
+    resolution:
+      {
+        integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==,
+      }
+    dev: false
 
   /mri@1.2.0:
     resolution:
@@ -9429,6 +9452,32 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
+    dev: true
+
+  /nuxt-svgo@3.5.0:
+    resolution:
+      {
+        integrity: sha512-3wch7+a0DEqh75Ny+VTVtEDdJAO2j/NH6clIvwdCq4H7+Xagh45Gq/Bdg8dfFcTPyKoS5noeHFA5MZOldr45ig==,
+      }
+    peerDependencies:
+      svgo-loader: ^4.0.0
+      vue-loader: ^17.0.0
+      vue-svg-loader: 0.17.0-beta.2
+    peerDependenciesMeta:
+      svgo-loader:
+        optional: true
+      vue-loader:
+        optional: true
+      vue-svg-loader:
+        optional: true
+    dependencies:
+      "@nuxt/kit": 3.7.0
+      "@vue/compiler-sfc": 3.3.4
+      mini-svg-data-uri: 1.4.4
+      svgo: 3.0.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt@3.7.0(eslint@8.48.0)(typescript@5.2.2):
