@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     {
-      files: ["pages/**/*.vue", "./app.vue"],
+      files: ["pages/**/*.vue", "components/**/*.vue", "./app.vue"],
       rules: {
         "vue/no-multiple-template-root": "off",
       },

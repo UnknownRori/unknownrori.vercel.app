@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Fira Code", ...defaultTheme.fontFamily.sans],
+        sans: ["Fira Code", ...fontFamily.sans],
       },
       screens: {
         sm: "240px",
