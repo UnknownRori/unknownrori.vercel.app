@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const routes = [
   { title: "Home", href: "/" },
-  { title: "Blog", href: "/blog" },
-  { title: "Projects", href: "/projects" },
-  { title: "Resume", href: "/resume" },
-  { title: "Social", href: "/social" },
+  { title: "Blog", disabled: true, href: "/blog" },
+  { title: "Projects", disabled: true, href: "/projects" },
+  { title: "Resume", disabled: true, href: "/resume" },
+  { title: "Social", disabled: true, href: "/social" },
 ];
 </script>
 

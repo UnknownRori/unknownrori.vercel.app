@@ -1,6 +1,8 @@
 <script setup lang="ts">
 type NavlinkType = {
   title: string;
+  active?: boolean,
+  disabled?: boolean,
   href: string;
 };
 
@@ -16,6 +18,8 @@ defineProps<{
       :key="id"
       :href="link.href"
       :title="link.title"
+      :disabled="link.disabled ?? false"
+      :active="link.active ?? false"
     />
   </ul>
 </template>
