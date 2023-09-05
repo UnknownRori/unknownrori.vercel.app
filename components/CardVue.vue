@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 rounded-md shadow shadow-gray-600 p-4">
+  <div class="bg-gray-800 rounded-md shadow-md shadow-gray-800">
     <slot />
   </div>
 </template>

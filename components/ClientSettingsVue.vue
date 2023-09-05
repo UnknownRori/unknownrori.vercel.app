@@ -28,7 +28,7 @@ const isOpen = ref(false);
     >
       <CardVue
         aria-label="Modal"
-        class="relative min-w-[42vw] max-w-[42vw] flex flex-col gap-2"
+        class="relative min-w-[42vw] max-w-[42vw] flex flex-col gap-2 p-4"
       >
         <header class="relative">
           <h1 class="text-center font-bold text-2xl drop-shadow-lg antialiased">
