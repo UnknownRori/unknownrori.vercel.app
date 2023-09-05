@@ -7,7 +7,7 @@ type RealtimeClockOpts = {
 
 export default function (opts: RealtimeClockOpts): Ref<string> {
   const utcOffset = opts?.utcOffset ?? 8;
-  const format = opts?.format ?? "hh:mm H";
+  const format = opts?.format ?? "hh:mm A";
 
   const clock = ref(moment().utc().utcOffset(utcOffset).format(format));
   let clockEventId: null | number = null;
