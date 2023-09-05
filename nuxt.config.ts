@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
-  modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss", "nuxt-svgo"],
   buildModules: ["@nuxt/typescript-build"],
 });
