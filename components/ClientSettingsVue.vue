@@ -3,7 +3,7 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <button class="hover:animate-spin" @click="isOpen = true">
+  <button class="motion-safe:hover:animate-spin" @click="isOpen = true">
     <svg
       class="h-8 w-8 text-white"
       viewBox="0 0 24 24"
