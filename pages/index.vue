@@ -4,19 +4,7 @@ import moment from "moment";
 const customSeo = generateSeoMeta({ title: "UnknownRori - Home" });
 useSeoMeta(customSeo as any);
 
-// TODO : Refactor this
-const clock = ref(moment().utc().utcOffset(8).format("HH:mm"));
-let clockEventId: null | number = null;
-
-onMounted(() => {
-  clockEventId = setInterval(() => {
-    clock.value = moment().utc().utcOffset(8).format("HH:mm");
-  }, 1000) as any as number;
-});
-
-onUnmounted(() => {
-  clearInterval(clockEventId as number);
-});
+const clock = useRealtimeClock();
 </script>
 
 <template>
