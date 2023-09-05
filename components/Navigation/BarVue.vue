@@ -6,7 +6,6 @@ const routes = [
   { title: "Resume", href: "/resume" },
   { title: "Social", href: "/social" },
 ];
-
 </script>
 
 <template>
@@ -19,10 +18,10 @@ const routes = [
         alt="Logo"
         class="w-10 h-10 object-cover rounded-full border-2 p-[0.2rem] border-white"
       />
-      <h1 class="text-lg antialiased">
-        UnknownRori
-      </h1>
-      <IconBadge class="text-xs font-light justify-start">v0.0.0</IconBadge>
+      <h1 class="text-lg antialiased">UnknownRori</h1>
+      <IconBadgeVue class="text-xs font-light justify-start">
+        v0.0.0
+      </IconBadgeVue>
     </header>
 
     <NavigationListVue :links="routes" />
