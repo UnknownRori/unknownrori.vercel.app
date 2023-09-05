@@ -1,8 +1,8 @@
 <script setup lang="ts">
 type NavlinkType = {
   title: string;
-  active?: boolean,
-  disabled?: boolean,
+  active?: boolean;
+  disabled?: boolean;
   href: string;
 };
 
