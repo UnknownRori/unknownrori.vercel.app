@@ -9,9 +9,7 @@ const routes = [
 </script>
 
 <template>
-  <nav
-    class="flex flex-row gap-4 items-center justify-between m-0 py-4 px-8"
-  >
+  <nav class="flex flex-row gap-4 items-center justify-between m-0 py-4 px-8">
     <header class="flex gap-2 items-center">
       <img
         src="~/assets/image/icon.webp"
