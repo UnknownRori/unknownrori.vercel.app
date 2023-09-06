@@ -10,11 +10,15 @@ defineProps<{
 <template>
   <li>
     <NuxtLink
+      v-if="!$props.disabled"
       :to="$props.href"
-      :disabled="$props.disabled"
-      :class="`${$props.disabled ? 'text-gray-500 cursor-not-allowed' : ''}`"
     >
       {{ $props.title }}
     </NuxtLink>
+    <span v-else
+      class="text-gray-500 cursor-not-allowed"
+      >
+      {{ $props.title }}
+    </span>
   </li>
 </template>
