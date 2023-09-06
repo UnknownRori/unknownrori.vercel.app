@@ -1,23 +1,26 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
+  icon: string;
   title: string;
   active?: boolean;
   disabled?: boolean;
   href: string;
 }>();
+
+const DynamicIcon = props.icon;
 </script>
 
 <template>
-  <li>
-    <NuxtLink
-      v-if="!$props.disabled"
-      :to="$props.href"
-    >
+  <li class="flex gap-1 justify-center items-center">
+    <DynamicIcon
+      :class="`w-6 h-6 ${$props.disabled ? 'text-cod-gray-800' : 'text-white'}`"
+      :fontControlled="false"
+      filled
+    />
+    <NuxtLink v-if="!$props.disabled" :to="$props.href">
       {{ $props.title }}
     </NuxtLink>
-    <span v-else
-      class="text-gray-500 cursor-not-allowed"
-      >
+    <span v-else class="text-cod-gray-800 cursor-not-allowed">
       {{ $props.title }}
     </span>
   </li>

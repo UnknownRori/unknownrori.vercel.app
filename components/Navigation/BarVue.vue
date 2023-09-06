@@ -1,10 +1,16 @@
 <script setup lang="ts">
+import SignalIcon from "~/assets/icon/Signal.svg";
+import ScrollIcon from "~/assets/icon/Scroll.svg";
+import TerminalIcon from "~/assets/icon/Terminal.svg";
+import IDCardIcon from "~/assets/icon/IDCard.svg";
+import PeopleIcon from "~/assets/icon/People.svg";
+
 const routes = [
-  { title: "Home", href: "/" },
-  { title: "Blog", disabled: true, href: "/blog" },
-  { title: "Projects", disabled: true, href: "/projects" },
-  { title: "Resume", disabled: true, href: "/resume" },
-  { title: "Social", disabled: true, href: "/social" },
+  { title: "Home", icon: SignalIcon, href: "/" },
+  { title: "Blog", icon: ScrollIcon, disabled: true, href: "/blog" },
+  { title: "Projects", icon: TerminalIcon, disabled: true, href: "/projects" },
+  { title: "Resume", icon: IDCardIcon, disabled: true, href: "/resume" },
+  { title: "Social", icon: PeopleIcon, disabled: true, href: "/social" },
 ];
 </script>
 
@@ -22,7 +28,7 @@ const routes = [
       </IconBadgeVue>
     </header>
 
-    <div class="flex flex-row justify-center items-center gap-4">
+    <div class="flex flex-row justify-center items-center gap-10">
       <NavigationListVue :links="routes" />
       <ClientSettingsVue />
     </div>

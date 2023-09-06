@@ -87,7 +87,8 @@ const experienceYear = 4; // TODO : Make this dynamic cuz I'm lazy to update som
             System Programming, Machine Learning.
           </p>
           <p>
-            I will share some of my thought, work, and favorite pieces on this site, you will also find resume and link to my social media network
+            I will share some of my thought, work, and favorite pieces on this
+            site, you will also find resume and link to my social media network
           </p>
         </main>
       </CardVue>
