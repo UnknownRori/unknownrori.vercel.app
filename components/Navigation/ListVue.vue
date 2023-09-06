@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <ul class="flex gap-10">
+  <ul class="flex gap-2">
     <NavigationLinkVue
       v-for="(link, id) in $props.links"
       :key="id"

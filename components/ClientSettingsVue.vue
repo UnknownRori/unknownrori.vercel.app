@@ -7,7 +7,7 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <button class="motion-safe:hover:animate-spin" @click="isOpen = true">
+  <button class="motion-safe:hover:animate-spin h-8" @click="isOpen = true">
     <SettingsIcon class="w-8 h-8 m-0 p-0" :fontControlled="false" filled />
   </button>
 

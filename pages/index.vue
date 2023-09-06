@@ -84,7 +84,8 @@ const experienceYear = 4; // TODO : Make this dynamic cuz I'm lazy to update som
           <p class="text-justify">
             I'm Akbar Hendra Jaya also known as UnknownRori a second year
             college student, I focus on Fullstack web developer, I enjoy making
-            Web Application and playing video game, I've been honing skill for
+            Web Application and playing video game, I've been honing my skill
+            for
             {{ experienceYear }}-years, I'm interested in Web Development,
             System Programming, Machine Learning.
           </p>

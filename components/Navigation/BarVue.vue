@@ -16,7 +16,7 @@ const routes = [
 
 <template>
   <nav
-    class="flex flex-row gap-4 items-center justify-between m-0 py-4 px-8 border-b-2 border-cod-gray-500"
+    class="flex flex-row gap-4 items-start justify-between m-0 mt-4 px-8 border-b-2 border-cod-gray-500"
   >
     <header class="flex gap-2 items-center">
       <div
@@ -33,7 +33,7 @@ const routes = [
       </IconBadgeVue>
     </header>
 
-    <div class="flex flex-row justify-center items-center gap-10">
+    <div class="flex flex-row gap-4">
       <NavigationListVue :links="routes" />
       <ClientSettingsVue />
     </div>
