@@ -8,6 +8,7 @@ const customSeo = generateSeoMeta({ title: "UnknownRori - Home" });
 useSeoMeta(customSeo as any);
 
 const clock = useRealtimeClock();
+const experienceYear = 4; // TODO : Make this dynamic cuz I'm lazy to update something stupid
 </script>
 
 <template>
@@ -77,11 +78,16 @@ const clock = useRealtimeClock();
           class="bg-cod-gray-900 hover:bg-cod-gray-700 bg-opacity-50 duration-300 transition-colors px-4 py-1 rounded-t-md"
           >About</span
         >
-        <main class="p-4">
-          <p>
+        <main class="flex flex-col gap-4 p-4 tracking-tight">
+          <p class="text-justify">
             I'm Akbar Hendra Jaya also known as UnknownRori a second year
-            college student, I focus on Fullstack web developer, I'm interested
-            in Web Development, System Programming, Machine Learning.
+            college student, I focus on Fullstack web developer, I enjoy making
+            Web Application and playing video game, I've been honing skill for
+            {{ experienceYear }}-years, I'm interested in Web Development,
+            System Programming, Machine Learning.
+          </p>
+          <p>
+            I will share some of my thought, work, and favorite pieces on this site, you will also find resume and link to my social media network
           </p>
         </main>
       </CardVue>

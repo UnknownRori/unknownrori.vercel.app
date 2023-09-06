@@ -5,7 +5,7 @@ type RealtimeClockOpts = {
   format?: string;
 };
 
-export default function (opts: RealtimeClockOpts): Ref<string> {
+export default function (opts?: RealtimeClockOpts): Ref<string> {
   const utcOffset = opts?.utcOffset ?? 8;
   const format = opts?.format ?? "hh:mm A";
 
