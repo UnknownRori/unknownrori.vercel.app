@@ -15,8 +15,13 @@ const routes = [
 </script>
 
 <template>
-  <nav class="flex flex-row gap-4 items-center justify-between m-0 py-4 px-8">
+  <nav
+    class="flex flex-row gap-4 items-center justify-between m-0 py-4 px-8 border-b-2 border-cod-gray-500"
+  >
     <header class="flex gap-2 items-center">
+      <div
+        class="border-l-8 border-r-2 border-cod-gray-200 py-4 px-[2px]"
+      ></div>
       <img
         src="~/assets/image/icon.webp"
         alt="Logo"

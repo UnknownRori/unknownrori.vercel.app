@@ -29,8 +29,10 @@ const experienceYear = 4; // TODO : Make this dynamic cuz I'm lazy to update som
               alt="UnknownRori"
               class="w-28 h-28 object-cover rounded-full"
             />
-            <h1 class="text-2xl antialiased font-medium">UnknownRori</h1>
-            <h3 class="text-sm">@UnknownRori / Akbar</h3>
+            <h1 class="text-2xl antialiased font-medium tracking-wide">
+              UnknownRori
+            </h1>
+            <h3 class="text-sm tracking-tight">@UnknownRori / Akbar</h3>
           </figure>
           <div>
             <!-- TODO : Maybe Refactor this into seperate components -->

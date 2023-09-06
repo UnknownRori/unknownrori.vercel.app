@@ -4,4 +4,7 @@ export default defineNuxtConfig({
   pages: true,
   modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss", "nuxt-svgo"],
   buildModules: ["@nuxt/typescript-build"],
+  css: [
+    "~/assets/css/scroll.css",
+  ],
 });
