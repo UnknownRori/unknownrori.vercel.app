@@ -12,10 +12,10 @@ const experienceYear = 4; // TODO : Make this dynamic cuz I'm lazy to update som
 </script>
 
 <template>
-  <div class="flex flex-row gap-4 m-8">
+  <div class="flex xl:flex-row sm:flex-col gap-4 m-8">
     <section>
       <CardVue
-        class="flex flex-col justify-center font-light w-[18vw] bg-opacity-50"
+        class="flex flex-col justify-center font-light xl:w-[24vw] sm:w-full bg-opacity-50"
       >
         <!-- TODO : Change color -->
         <span
@@ -34,7 +34,7 @@ const experienceYear = 4; // TODO : Make this dynamic cuz I'm lazy to update som
             </h1>
             <h3 class="text-sm tracking-tight">@UnknownRori / Akbar</h3>
           </figure>
-          <div>
+          <div class="flex flex-col xl:self-start sm:self-center">
             <!-- TODO : Maybe Refactor this into seperate components -->
             <span class="flex items-center gap-1">
               <BuildingIcon

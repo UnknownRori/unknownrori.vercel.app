@@ -12,7 +12,9 @@ const underConstructionWarning = ref(true);
     :is-open="underConstructionWarning"
     @click-outside="underConstructionWarning = false"
   >
-    <CardVue class="flex flex-col gap-4 p-5 min-w-[30vw] max-w-[30vw]">
+    <CardVue
+      class="flex flex-col gap-4 p-5 xl:min-w-[40vw] xl:max-w-[40vw] lg:min-w-[50vw] lg:max-w-[50vw] md:min-w-[80vw] md:max-w-[80vw] sm:min-w-[80vw] sm:max-w-[80vw]"
+    >
       <header class="flex items-center gap-4">
         <InfoIcon class="w-12 h-12" :font-controlled="false" filled />
         <h1 class="text-2xl">Alpha Version</h1>
