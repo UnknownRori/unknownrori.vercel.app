@@ -29,10 +29,10 @@ watch(
     <NuxtLink
       v-if="!$props.disabled"
       :to="$props.href"
-      :class="`relative flex justify-evenly gap-2 px-4 py-2 bg-opacity-50 duration-500 bg-cod-gray-900 ${
+      :class="`relative flex justify-evenly gap-2 px-4 py-2 bg-opacity-50 duration-500 ${
         isActive
           ? 'text-white bg-cod-gray-700 pb-4 rounded-t'
-          : 'text-cod-gray-400 rounded'
+          : 'text-cod-gray-400 rounded bg-cod-gray-950'
       } z-10`"
     >
       <span
