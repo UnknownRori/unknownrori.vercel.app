@@ -8,7 +8,7 @@ const customSeo = generateSeoMeta({ title: "UnknownRori - Home" });
 useSeoMeta(customSeo as any);
 
 const clock = useRealtimeClock();
-const experienceYear = 4; // TODO : Make this dynamic cuz I'm lazy to update something stupid
+const experienceYear = (new Date()).getUTCFullYear() - 2019;
 </script>
 
 <template>
