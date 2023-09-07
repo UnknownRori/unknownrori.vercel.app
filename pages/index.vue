@@ -13,15 +13,18 @@ const experienceYear = (new Date()).getUTCFullYear() - 2019;
 
 <template>
   <div class="flex xl:flex-row sm:flex-col gap-4 m-8">
+      <div
+        class="border-l-8 border-r-2 border-cod-gray-200 px-[2px] sm:hidden xl:block animate-l-border-start duration-1000"
+      ></div>
     <section>
       <CardVue
         class="flex flex-col justify-center font-light xl:w-[24vw] sm:w-full bg-opacity-50"
       >
         <!-- TODO : Change color -->
-        <span
-          class="bg-cod-gray-900 hover:bg-cod-gray-700 bg-opacity-50 duration-500 transition-colors px-4 py-1 rounded-t-md"
-          >Profile</span
-        >
+        <div class="group relative bg-cod-gray-900 bg-opacity-50 px-4 py-1 rounded-t-md">
+          <div class="absolute top-0 left-0 bg-cod-gray-800 w-0 h-full group-hover:w-full duration-500 transition-all rounded-t-md"></div>
+          <span class="relative">Profile</span>
+        </div>
         <div class="flex flex-col gap-2 p-4">
           <figure class="flex flex-col items-center">
             <img
@@ -76,10 +79,10 @@ const experienceYear = (new Date()).getUTCFullYear() - 2019;
 
     <section>
       <CardVue class="flex flex-col gap-2 bg-opacity-50">
-        <span
-          class="bg-cod-gray-900 hover:bg-cod-gray-700 bg-opacity-50 duration-300 transition-colors px-4 py-1 rounded-t-md"
-          >About</span
-        >
+        <div class="group relative bg-cod-gray-900 bg-opacity-50 px-4 py-1 rounded-t-md">
+          <div class="absolute top-0 left-0 bg-cod-gray-800 w-0 h-full group-hover:w-full duration-1000 transition-all z-0 rounded-t-md"></div>
+          <span class="relative z-10">About</span>
+        </div>
         <main class="flex flex-col gap-4 p-4 tracking-tight">
           <p class="text-justify">
             I'm Akbar Hendra Jaya also known as UnknownRori a second year
@@ -98,3 +101,19 @@ const experienceYear = (new Date()).getUTCFullYear() - 2019;
     </section>
   </div>
 </template>
+
+<style scoped>
+.animate-l-border-start {
+  animation: height-to-card-profile 1s ease-in-out forwards;
+}
+
+@keyframes height-to-card-profile {
+  0% {
+  height: 0;
+  }
+
+  100% {
+    height: 21rem;
+  }
+}
+</style>

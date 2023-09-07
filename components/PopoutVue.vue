@@ -14,13 +14,13 @@ defineEmits<{
       <div
         v-if="isOpen"
         aria-label="Modal Wrapper"
-        class="fixed flex justify-center items-center w-screen h-screen text-white"
+        class="fixed flex justify-center items-center w-screen h-screen text-white z-30"
       >
         <div
           @click="$emit('click-outside')"
-          class="absolute w-full h-full top-0 left-0 bg-slate-950 bg-opacity-40 z-0"
+          class="absolute w-full h-full top-0 left-0 bg-slate-950 bg-opacity-40 z-20"
         ></div>
-        <div class="z-10">
+        <div class="z-30">
           <slot />
         </div>
       </div>
