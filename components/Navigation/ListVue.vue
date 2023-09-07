@@ -19,6 +19,7 @@ defineProps<{
       :icon="link.icon"
       :href="link.href"
       :title="link.title"
+      :is-active="false"
       :disabled="link.disabled ?? false"
     />
   </ul>

@@ -10,7 +10,7 @@ const routes = [
   { title: "Blog", icon: ScrollIcon, disabled: true, href: "/blog" },
   { title: "Projects", icon: TerminalIcon, disabled: true, href: "/projects" },
   { title: "Resume", icon: IDCardIcon, disabled: true, href: "/resume" },
-  { title: "Social", icon: PeopleIcon, disabled: true, href: "/social" },
+  { title: "Social", icon: PeopleIcon, href: "/social" },
 ];
 </script>
 
