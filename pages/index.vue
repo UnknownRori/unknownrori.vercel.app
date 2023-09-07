@@ -8,21 +8,25 @@ const customSeo = generateSeoMeta({ title: "UnknownRori - Home" });
 useSeoMeta(customSeo as any);
 
 const clock = useRealtimeClock();
-const experienceYear = (new Date()).getUTCFullYear() - 2019;
+const experienceYear = new Date().getUTCFullYear() - 2019;
 </script>
 
 <template>
   <div class="flex xl:flex-row sm:flex-col gap-4 m-8">
-      <div
-        class="border-l-8 border-r-2 border-cod-gray-200 px-[2px] sm:hidden xl:block animate-l-border-start duration-1000"
-      ></div>
+    <div
+      class="border-l-8 border-r-2 border-cod-gray-200 px-[2px] sm:hidden xl:block animate-l-border-start duration-1000"
+    ></div>
     <section>
       <CardVue
         class="flex flex-col justify-center font-light xl:w-[24vw] sm:w-full bg-opacity-50"
       >
         <!-- TODO : Change color -->
-        <div class="group relative bg-cod-gray-900 bg-opacity-50 px-4 py-1 rounded-t-md">
-          <div class="absolute top-0 left-0 bg-cod-gray-800 w-0 h-full group-hover:w-full duration-500 transition-all rounded-t-md"></div>
+        <div
+          class="group relative bg-cod-gray-900 bg-opacity-50 px-4 py-1 rounded-t-md"
+        >
+          <div
+            class="absolute top-0 left-0 bg-cod-gray-800 w-0 h-full group-hover:w-full duration-500 transition-all rounded-t-md"
+          ></div>
           <span class="relative">Profile</span>
         </div>
         <div class="flex flex-col gap-2 p-4">
@@ -79,8 +83,12 @@ const experienceYear = (new Date()).getUTCFullYear() - 2019;
 
     <section>
       <CardVue class="flex flex-col gap-2 bg-opacity-50">
-        <div class="group relative bg-cod-gray-900 bg-opacity-50 px-4 py-1 rounded-t-md">
-          <div class="absolute top-0 left-0 bg-cod-gray-800 w-0 h-full group-hover:w-full duration-1000 transition-all z-0 rounded-t-md"></div>
+        <div
+          class="group relative bg-cod-gray-900 bg-opacity-50 px-4 py-1 rounded-t-md"
+        >
+          <div
+            class="absolute top-0 left-0 bg-cod-gray-800 w-0 h-full group-hover:w-full duration-1000 transition-all z-0 rounded-t-md"
+          ></div>
           <span class="relative z-10">About</span>
         </div>
         <main class="flex flex-col gap-4 p-4 tracking-tight">
@@ -109,7 +117,7 @@ const experienceYear = (new Date()).getUTCFullYear() - 2019;
 
 @keyframes height-to-card-profile {
   0% {
-  height: 0;
+    height: 0;
   }
 
   100% {
