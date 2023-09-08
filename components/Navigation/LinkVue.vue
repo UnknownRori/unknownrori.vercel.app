@@ -84,7 +84,7 @@ watch(
         {{ $props.title }}
       </span>
       <span
-        class="absolute -bottom-1 left-0 bg-cod-gray-500 w-0 h-[2px] group-hover:w-full duration-300"
+        class="absolute -bottom-1 right-0 bg-cod-gray-500 w-0 h-[2px] group-hover:w-full duration-300"
       ></span>
     </span>
   </li>
