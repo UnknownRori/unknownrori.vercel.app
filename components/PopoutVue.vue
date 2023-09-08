@@ -10,7 +10,7 @@ defineEmits<{
 
 <template>
   <Teleport to="body">
-    <Transition>
+    <Transition name="fade">
       <div
         v-if="isOpen"
         aria-label="Modal Wrapper"
@@ -27,16 +27,3 @@ defineEmits<{
     </Transition>
   </Teleport>
 </template>
-
-<style scoped>
-/* we will explain what these classes do next! */
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
-</style>
