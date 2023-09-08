@@ -3,6 +3,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./app/spa-loading-template.html",
     "./app.vue",
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",

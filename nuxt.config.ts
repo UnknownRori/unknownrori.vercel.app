@@ -4,7 +4,10 @@ export default defineNuxtConfig({
   pages: true,
   modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss", "nuxt-svgo"],
   buildModules: ["@nuxt/typescript-build"],
+  // ssr: false,
+  // spaLoadingTemplate: true,
   css: [
     "~/assets/css/scroll.css",
+    "~/assets/css/vue.css",
   ],
 });
