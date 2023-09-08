@@ -8,7 +8,7 @@ const isOpen = ref(false);
 
 <template>
   <button class="motion-safe:hover:animate-spin h-8" @click="isOpen = true">
-    <SettingsIcon class="w-8 h-8 m-0 p-0" :fontControlled="false" filled />
+    <SettingsIcon class="w-8 h-8 m-0 p-0" :font-controlled="false" filled />
   </button>
 
   <PopoutVue :is-open="isOpen">
@@ -24,7 +24,7 @@ const isOpen = ref(false);
         <button @click="isOpen = false">
           <CloseIcon
             class="absolute h-8 w-8 right-0 top-0 text-cod-gray-800 hover:text-white duration-300"
-            :fontControlled="false"
+            :font-controlled="false"
             filled
           />
         </button>
@@ -36,7 +36,7 @@ const isOpen = ref(false);
               Display type
               <InfoIcon
                 class="h-4 w-4 text-white"
-                :fontControlled="false"
+                :font-controlled="false"
                 filled
               />
             </label>
@@ -55,7 +55,7 @@ const isOpen = ref(false);
               Colorscheme
               <InfoIcon
                 class="h-4 w-4 text-white"
-                :fontControlled="false"
+                :font-controlled="false"
                 filled
               />
             </label>

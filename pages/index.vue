@@ -46,7 +46,7 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
             <span class="flex items-center gap-1">
               <BuildingIcon
                 class="h-4 w-4 text-white"
-                :fontController="false"
+                :font-controlled="false"
                 filled
               />
               Amikom Surakarta
@@ -54,7 +54,7 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
             <span class="flex items-center gap-1">
               <LocationIcon
                 class="h-4 w-4 text-white"
-                :fontController="false"
+                :font-controlled="false"
                 filled
               />
               Indonesia
@@ -62,7 +62,7 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
             <span class="flex items-center gap-1">
               <ClockIcon
                 class="h-4 w-4 text-white"
-                :fontController="false"
+                :font-controlled="false"
                 filled
               />
               {{ clock }}
@@ -71,7 +71,7 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
               <!-- TODO : Maybe switch to flags instead of name -->
               <ChatIcon
                 class="h-4 w-4 text-white"
-                :fontController="false"
+                :font-controlled="false"
                 filled
               />
               English, Indonesian

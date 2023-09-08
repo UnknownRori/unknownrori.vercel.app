@@ -49,7 +49,7 @@ watch(
             ? 'text-cod-gray-800'
             : 'text-cod-gray-400'
         } `"
-        :fontControlled="false"
+        :font-controlled="false"
         filled
       />
       <span class="z-10">
@@ -77,7 +77,7 @@ watch(
             ? 'text-cod-gray-800'
             : 'text-cod-gray-400'
         } `"
-        :fontControlled="false"
+        :font-controlled="false"
         filled
       />
       <span>
