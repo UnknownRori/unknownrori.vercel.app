@@ -138,15 +138,19 @@ onBeforeMount(async () => {
     </CardVue>
   </PopoutVue>
 
-  <NuxtLayout name="default-layout">
-    <NavigationBarVue />
-    <div class="h-8 overflow-hidden mx-10">
-      <div class="bg-[url(~/assets/icon/Seperator.svg)] bg-repeat-x py-4"></div>
-    </div>
-    <NuxtLoadingIndicator />
+  <Transition>
+    <NuxtLayout v-if="isDummyLoadingDone" name="default-layout">
+      <NavigationBarVue />
+      <div class="h-8 overflow-hidden mx-10">
+        <div
+          class="bg-[url(~/assets/icon/Seperator.svg)] bg-repeat-x py-4"
+        ></div>
+      </div>
+      <NuxtLoadingIndicator />
 
-    <main>
-      <NuxtPage />
-    </main>
-  </NuxtLayout>
+      <main>
+        <NuxtPage />
+      </main>
+    </NuxtLayout>
+  </Transition>
 </template>
