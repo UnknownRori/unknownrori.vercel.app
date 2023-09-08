@@ -1,5 +1,7 @@
 # unknownrori.vercel.app
 
+This is a repository of my [website](https://unknownrori.vercel.app), it's currently under rapid development, its main purpose to decomision one of my [portfolio site](https://unknownrori-firebase.web.app/).
+
 ## Development
 
 ```sh
@@ -10,6 +12,10 @@ cd unknownrori.vercel.app
 # Install dependencies
 pnpm install
 
-# Start development server 
+# Start development server
 pnpm run dev
 ```
+
+## Contribution
+
+Feel free to contribute, I don't have any specific instruction.
