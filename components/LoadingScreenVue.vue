@@ -5,11 +5,11 @@ type LoadingContentType = {
 };
 
 defineProps<{
-  show: boolean,
+  show: boolean;
 }>();
 
 const emits = defineEmits<{
-  (e: "done"): void
+  (e: "done"): void;
 }>();
 
 const route = useRoute();
@@ -76,7 +76,7 @@ onBeforeMount(async () => {
     <div
       v-if="$props.show"
       id="loading"
-      class="absolute inset-0 flex flex-col gap-2 justify-center items-center w-screen h-screen bg-black z-50 bg-[url(~/assets/icon/Grid.svg)]"
+      class="absolute inset-0 flex flex-col gap-2 justify-center items-center w-screen h-screen bg-black z-50 bg-[url(~/assets/icon/Grid.svg)] z-[10000]"
     >
       <div
         class="absolute inset-0 w-screen bg-gradient-to-b from-transparent from-40% to-80% to-black z-10"
