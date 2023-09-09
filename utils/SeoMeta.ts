@@ -10,6 +10,8 @@ export function generateSeoMeta(opts: SeoMetaOpts) {
     description: "UnknownRori's personal site",
     author: "UnknownRori",
 
+    googleSiteVerification: "GggFxN-h7JkmfbSQ7HbToni5fMp01-87CMWFhr9N0jw",
+
     ogUrl: "https://unknownrori.vercel.app",
     ogType: "website",
     ogTitle: "UnknownRori's personal site",
