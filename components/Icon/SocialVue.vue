@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <CardVue class="relative w-48 h-40">
+  <CardVue class="relative w-48 h-40 bg-opacity-80">
     <a
       :href="$props.href"
       target="_blank"
