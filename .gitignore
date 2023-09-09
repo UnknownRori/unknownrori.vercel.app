@@ -26,3 +26,5 @@ logs
 # eslint
 .eslintcache
 
+# Service worker
+sw.*

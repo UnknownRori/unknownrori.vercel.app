@@ -20,10 +20,11 @@ const loadingContentShown = ref([] as Array<LoadingContentType>);
 const loadingContents = [
   { time: 0, text: "Booting..." },
   { time: 1, text: "Loading minimal resources..." },
-  { time: 4, text: currentPageFile },
+  { time: 4, text: "Loading /sw.js" },
+  { time: 12, text: currentPageFile },
+  { time: 42, text: "/assets/css/nuxt.js" },
   { time: 12, text: "/assets/css/tailwind.css" },
   { time: 14, text: "/assets/css/scroll.css" },
-  { time: 42, text: "/assets/css/nuxt.js" },
   { time: 62, text: "Loading content..." },
   { time: 82, text: "Content Loaded..." },
   { time: 88, text: "Creating app..." },
