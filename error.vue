@@ -11,7 +11,6 @@ onMounted(() => {
 
 <template>
   <NuxtLayout name="default-layout">
-    <NuxtLayout name="404">
-    </NuxtLayout>
+    <NuxtLayout name="404"> </NuxtLayout>
   </NuxtLayout>
 </template>

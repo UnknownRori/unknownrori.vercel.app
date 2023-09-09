@@ -10,7 +10,7 @@ watchEffect(() => {
       input.value?.focus();
     });
   }
-})
+});
 
 function executeCommand() {
   if (pressed.value != "") {
@@ -21,7 +21,7 @@ function executeCommand() {
 
 onMounted(() => {
   // TODO : Refactor this
-  document.addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       isActivated.value = false;
       document.body.focus();
@@ -40,12 +40,10 @@ onMounted(() => {
     }
   });
   input.value?.addEventListener("focusout", () => {
-      isActivated.value = false;
-      document.body.focus();
-  })
-})
-
-
+    isActivated.value = false;
+    document.body.focus();
+  });
+});
 </script>
 
 <template>
@@ -56,7 +54,12 @@ onMounted(() => {
       </ul>
       <div class="flex">
         <span>:</span>
-        <input v-model="pressed" type="text" class="text-white bg-transparent border-none outline-none" ref="input">
+        <input
+          v-model="pressed"
+          type="text"
+          class="text-white bg-transparent border-none outline-none"
+          ref="input"
+        />
       </div>
     </div>
   </PopoutVue>

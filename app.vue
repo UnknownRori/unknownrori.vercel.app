@@ -4,11 +4,13 @@ import InfoIcon from "~/assets/icon/Info.svg";
 // TODO : Make this only appear once in every visit
 const underConstructionWarning = ref(true);
 const isDummyLoadingDone = ref(false);
-
 </script>
 
 <template>
-  <LoadingScreenVue @done="isDummyLoadingDone = true" :show="!isDummyLoadingDone" />
+  <LoadingScreenVue
+    @done="isDummyLoadingDone = true"
+    :show="!isDummyLoadingDone"
+  />
 
   <PopoutVue
     :is-open="underConstructionWarning"
