@@ -44,7 +44,7 @@ useSeoMeta(meta as any);
         </main>
       </CardVue>
       <section class="flex justify-center gap-4 flex-wrap">
-        <IconSocialVue
+        <LazyIconSocialVue
           v-for="(link, id) in socialMediaLinks"
           :key="id"
           :href="link.href"
