@@ -14,7 +14,7 @@ defineEmits<{
       <div
         v-if="isOpen"
         aria-label="Modal Wrapper"
-        class="fixed flex justify-center items-center w-screen h-screen text-white z-30"
+        class="fixed top-0 left-0 flex justify-center items-center w-screen h-screen text-white z-50"
       >
         <div
           @click="$emit('click-outside')"
