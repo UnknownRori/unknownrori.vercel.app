@@ -74,8 +74,11 @@ onBeforeMount(async () => {
     <div
       v-if="!isDummyLoadingDone"
       id="loading"
-      class="absolute inset-0 flex flex-col gap-2 justify-center items-center w-screen h-screen bg-black z-50"
+      class="absolute inset-0 flex flex-col gap-2 justify-center items-center w-screen h-screen bg-black z-50 bg-[url(~/assets/icon/Grid.svg)]"
     >
+      <div
+        class="absolute inset-0 w-screen bg-gradient-to-b from-transparent from-40% to-80% to-black z-10"
+      ></div>
       <h2 class="text-lg text-white">Please wait warmly....</h2>
       <div
         class="relative bg-cod-gray-950 rounded-md py-2 w-[24vw] lg:w-[42vw] md:w-[60vw] sm:w-[82vw]"
@@ -88,9 +91,6 @@ onBeforeMount(async () => {
       <div
         class="relative min-h-[48vh] w-[24vw] lg:w-[42vw] md:w-[60vw] sm:w-[82vw]"
       >
-        <div
-          class="absolute inset-0 bg-gradient-to-b from-transparent to-black"
-        ></div>
         <div
           class="flex flex-col-reverse justify-center items-start text-white overflow-hidden"
         >
