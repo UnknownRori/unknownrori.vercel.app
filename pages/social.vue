@@ -10,10 +10,10 @@ useSeoMeta(meta as any);
     <div class="flex flex-col gap-8">
       <CardVue>
         <div
-          class="group relative bg-cod-gray-900 bg-opacity-50 px-4 py-1 rounded-t-md"
+          class="group relative rounded-t-md bg-cod-gray-900 bg-opacity-50 px-4 py-1"
         >
           <div
-            class="absolute top-0 left-0 bg-cod-gray-800 w-0 h-full group-hover:w-full duration-500 transition-all rounded-t-md"
+            class="absolute left-0 top-0 h-full w-0 rounded-t-md bg-cod-gray-800 transition-all duration-500 group-hover:w-full"
           ></div>
           <span class="relative">Important Notice</span>
         </div>
@@ -43,7 +43,7 @@ useSeoMeta(meta as any);
           </p>
         </main>
       </CardVue>
-      <section class="flex justify-center gap-4 flex-wrap">
+      <section class="flex flex-wrap justify-center gap-4">
         <LazyIconSocialVue
           v-for="(link, id) in socialMediaLinks"
           :key="id"

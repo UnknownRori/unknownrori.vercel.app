@@ -17,13 +17,13 @@ function clickAction() {
 <template>
   <button @click="clickAction" class="flex flex-col gap-[5px]">
     <span
-      :class="`w-10 py-[3px] duration-500 bg-white rounded-full ${style}`"
+      :class="`w-10 rounded-full bg-white py-[3px] duration-500 ${style}`"
     ></span>
     <span
-      :class="`w-10 py-[3px] duration-500 bg-white rounded-full ${style}`"
+      :class="`w-10 rounded-full bg-white py-[3px] duration-500 ${style}`"
     ></span>
     <span
-      :class="`w-10 py-[3px] duration-500 bg-white rounded-full ${style}`"
+      :class="`w-10 rounded-full bg-white py-[3px] duration-500 ${style}`"
     ></span>
   </button>
 </template>

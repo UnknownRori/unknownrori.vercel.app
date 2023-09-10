@@ -2,21 +2,23 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
-  modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss", "nuxt-svgo", "@kevinmarrec/nuxt-pwa"],
+  modules: [
+    "@nuxtjs/eslint-module",
+    "@nuxtjs/tailwindcss",
+    "nuxt-svgo",
+    "@kevinmarrec/nuxt-pwa",
+  ],
   buildModules: ["@nuxt/typescript-build"],
   // ssr: false,
   // spaLoadingTemplate: true,
-  css: [
-    "~/assets/css/scroll.css",
-    "~/assets/css/vue.css",
-  ],
+  css: ["~/assets/css/scroll.css", "~/assets/css/vue.css"],
   pwa: {
     manifest: {
       name: "UnknownRori's online portfolio",
       short_name: "UnknownRori",
       description: "UnknownRori's personal site",
       background_color: "#000000",
-      lang: 'en',
+      lang: "en",
     },
     meta: {
       name: "UnknownRori's personal site",
@@ -28,10 +30,10 @@ export default defineNuxtConfig({
         path: "/cover.png",
         width: 1366,
         height: 653,
-        type: "image/png"
+        type: "image/png",
       },
       twitterCard: "summary",
       twitterCreator: "UnknownRori",
-    }
+    },
   },
 });

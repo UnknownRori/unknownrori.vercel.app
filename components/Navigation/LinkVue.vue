@@ -24,25 +24,25 @@ watch(
 
 <template>
   <li
-    class="group flex justify-center items-start tracking-widest font-medium duration-500`"
+    class="duration-500` group flex items-start justify-center font-medium tracking-widest"
   >
     <NuxtLink
       v-if="!$props.disabled"
       :to="$props.href"
-      :class="`relative flex justify-evenly gap-2 px-4 py-2 bg-opacity-50 duration-500 sm:w-full sm:justify-start xl:w-auto ${
+      :class="`relative flex justify-evenly gap-2 bg-opacity-50 px-4 py-2 duration-500 sm:w-full sm:justify-start xl:w-auto ${
         isActive
-          ? 'text-white bg-cod-gray-700 pb-4 rounded-t'
-          : 'text-cod-gray-400 rounded bg-cod-gray-950'
+          ? 'rounded-t bg-cod-gray-700 pb-4 text-white'
+          : 'rounded bg-cod-gray-950 text-cod-gray-400'
       } z-10`"
     >
       <span
-        class="absolute -top-1 left-0 bg-cod-gray-500 w-0 h-[2px] group-hover:w-full duration-300"
+        class="absolute -top-1 left-0 h-[2px] w-0 bg-cod-gray-500 duration-300 group-hover:w-full"
       ></span>
       <span
-        class="absolute top-0 left-0 h-full w-0 group-hover:w-full duration-300 z-0 bg-opacity-10 rounded group-hover:bg-cod-gray-800"
+        class="absolute left-0 top-0 z-0 h-full w-0 rounded bg-opacity-10 duration-300 group-hover:w-full group-hover:bg-cod-gray-800"
       ></span>
       <DynamicIcon
-        :class="`w-6 h-6 z-10 ${
+        :class="`z-10 h-6 w-6 ${
           isActive
             ? 'text-white'
             : $props.disabled
@@ -56,7 +56,7 @@ watch(
         {{ $props.title }}
       </span>
       <span
-        :class="`absolute -bottom-1 right-0 bg-cod-gray-500 w-0 h-[2px] duration-300 z-10 ${
+        :class="`absolute -bottom-1 right-0 z-10 h-[2px] w-0 bg-cod-gray-500 duration-300 ${
           isActive ? 'group-hover:w-0' : 'group-hover:w-full '
         }`"
       ></span>
@@ -64,13 +64,13 @@ watch(
 
     <span
       v-else
-      class="flex relative justify-evenly gap-2 text-cod-gray-800 px-4 py-2 pb-2 mb-2 z-10 sm:w-full sm:justify-start xl:w-auto cursor-not-allowed"
+      class="relative z-10 mb-2 flex cursor-not-allowed justify-evenly gap-2 px-4 py-2 pb-2 text-cod-gray-800 sm:w-full sm:justify-start xl:w-auto"
     >
       <span
-        class="absolute -top-1 left-0 bg-cod-gray-500 w-0 h-[2px] group-hover:w-full duration-300"
+        class="absolute -top-1 left-0 h-[2px] w-0 bg-cod-gray-500 duration-300 group-hover:w-full"
       ></span>
       <DynamicIcon
-        :class="`w-6 h-6 z-10 ${
+        :class="`z-10 h-6 w-6 ${
           isActive
             ? 'text-white'
             : $props.disabled
@@ -84,7 +84,7 @@ watch(
         {{ $props.title }}
       </span>
       <span
-        class="absolute -bottom-1 right-0 bg-cod-gray-500 w-0 h-[2px] group-hover:w-full duration-300"
+        class="absolute -bottom-1 right-0 h-[2px] w-0 bg-cod-gray-500 duration-300 group-hover:w-full"
       ></span>
     </span>
   </li>

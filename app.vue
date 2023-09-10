@@ -17,10 +17,10 @@ const isDummyLoadingDone = ref(false);
     @click-outside="underConstructionWarning = false"
   >
     <CardVue
-      class="flex flex-col gap-4 p-5 xl:min-w-[40vw] xl:max-w-[40vw] lg:min-w-[50vw] lg:max-w-[50vw] md:min-w-[80vw] md:max-w-[80vw] sm:min-w-[80vw] sm:max-w-[80vw]"
+      class="flex flex-col gap-4 p-5 sm:min-w-[80vw] sm:max-w-[80vw] md:min-w-[80vw] md:max-w-[80vw] lg:min-w-[50vw] lg:max-w-[50vw] xl:min-w-[40vw] xl:max-w-[40vw]"
     >
       <header class="flex items-center gap-4">
-        <InfoIcon class="w-12 h-12" :font-controlled="false" filled />
+        <InfoIcon class="h-12 w-12" :font-controlled="false" filled />
         <h1 class="text-2xl">Alpha Version</h1>
       </header>
       <main class="flex flex-col gap-4">
@@ -30,7 +30,7 @@ const isDummyLoadingDone = ref(false);
           fill an issue if something is really bad happening
         </p>
         <button
-          class="bg-green-500 font-bold rounded p-2"
+          class="rounded bg-green-500 p-2 font-bold"
           @click="underConstructionWarning = false"
         >
           Ok

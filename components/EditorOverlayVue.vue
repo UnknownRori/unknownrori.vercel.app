@@ -57,7 +57,7 @@ onMounted(() => {
         <input
           v-model="pressed"
           type="text"
-          class="text-white bg-transparent border-none outline-none"
+          class="border-none bg-transparent text-white outline-none"
           ref="input"
         />
       </div>

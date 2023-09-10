@@ -13,6 +13,7 @@ module.exports = {
     "@nuxtjs/eslint-config-typescript",
     "plugin:vue/recommended",
     "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended",
   ],
   plugins: ["vue"],
   rules: {

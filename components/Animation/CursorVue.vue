@@ -42,7 +42,7 @@ onUnmounted(() => {
   <span
     v-show="ready"
     ref="mouse"
-    :class="`absolute sm:bg-transparent xl:bg-white p-[1rem] rounded-full mix-blend-difference pointer-events-none z-[100000] shadow shadow-cod-gray-800 ${
+    :class="`pointer-events-none absolute z-[100000] rounded-full p-[1rem] mix-blend-difference shadow shadow-cod-gray-800 sm:bg-transparent xl:bg-white ${
       pressed ? 'animate-click' : ''
     }`"
   ></span>

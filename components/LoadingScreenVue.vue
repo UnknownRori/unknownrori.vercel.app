@@ -77,25 +77,25 @@ onBeforeMount(async () => {
     <div
       v-if="$props.show"
       id="loading"
-      class="absolute inset-0 flex flex-col gap-2 justify-center items-center w-screen h-screen bg-black z-50 bg-[url(~/assets/icon/Grid.svg)] z-[10000]"
+      class="absolute inset-0 z-50 z-[10000] flex h-screen w-screen flex-col items-center justify-center gap-2 bg-black bg-[url(~/assets/icon/Grid.svg)]"
     >
       <div
-        class="absolute inset-0 w-screen bg-gradient-to-b from-transparent from-40% to-80% to-black z-10"
+        class="absolute inset-0 z-10 w-screen bg-gradient-to-b from-transparent from-40% to-black to-80%"
       ></div>
       <h2 class="text-lg text-white">Please wait warmly....</h2>
       <div
-        class="relative bg-cod-gray-950 rounded-md py-2 w-[24vw] lg:w-[42vw] md:w-[60vw] sm:w-[82vw]"
+        class="relative w-[24vw] rounded-md bg-cod-gray-950 py-2 sm:w-[82vw] md:w-[60vw] lg:w-[42vw]"
       >
         <span
-          class="absolute top-0 left-0 rounded-md h-full bg-white"
+          class="absolute left-0 top-0 h-full rounded-md bg-white"
           :style="`width: ${loadingLength}%`"
         ></span>
       </div>
       <div
-        class="relative min-h-[48vh] w-[24vw] lg:w-[42vw] md:w-[60vw] sm:w-[82vw]"
+        class="relative min-h-[48vh] w-[24vw] sm:w-[82vw] md:w-[60vw] lg:w-[42vw]"
       >
         <div
-          class="flex flex-col-reverse justify-center items-start text-white overflow-hidden"
+          class="flex flex-col-reverse items-start justify-center overflow-hidden text-white"
         >
           <TransitionGroup name="from-right">
             <!-- <span v-for="(val, idx) in loadingContent" :key="idx">{{ val }}</span> -->

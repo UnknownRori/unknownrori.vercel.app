@@ -7,24 +7,24 @@ defineProps<{
 </script>
 
 <template>
-  <CardVue class="relative w-48 h-40 bg-opacity-80">
+  <CardVue class="relative h-40 w-48 bg-opacity-80">
     <a
       :href="$props.href"
       target="_blank"
-      class="group flex flex-col w-full h-full"
+      class="group flex h-full w-full flex-col"
     >
       <div
-        class="relative flex justify-center items-center bg-cod-gray-900 bg-opacity-50 px-4 py-1 rounded-t-md"
+        class="relative flex items-center justify-center rounded-t-md bg-cod-gray-900 bg-opacity-50 px-4 py-1"
       >
         <div
-          class="absolute top-0 left-0 bg-cod-gray-800 w-0 h-full group-hover:w-full duration-500 transition-all rounded-t-md"
+          class="absolute left-0 top-0 h-full w-0 rounded-t-md bg-cod-gray-800 transition-all duration-500 group-hover:w-full"
         ></div>
         <span class="relative">{{ $props.alt }}</span>
       </div>
-      <div class="relative flex justify-center items-center h-full">
+      <div class="relative flex h-full items-center justify-center">
         <img :src="$props.src" :alt="$props.alt" class="w-24 p-2" />
         <span
-          class="absolute bottom-0 left-0 bg-cod-gray-500 w-full h-0 bg-opacity-10 group-hover:h-full duration-500 transition-all rounded-b-md"
+          class="absolute bottom-0 left-0 h-0 w-full rounded-b-md bg-cod-gray-500 bg-opacity-10 transition-all duration-500 group-hover:h-full"
         ></span>
       </div>
     </a>

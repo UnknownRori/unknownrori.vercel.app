@@ -18,26 +18,26 @@ const routes = [
 
 <template>
   <nav
-    class="flex flex-row gap-4 items-start justify-between m-0 mt-4 px-8 border-b-2 border-cod-gray-500"
+    class="m-0 mt-4 flex flex-row items-start justify-between gap-4 border-b-2 border-cod-gray-500 px-8"
   >
-    <header class="flex gap-2 items-center">
+    <header class="flex items-center gap-2">
       <div
-        class="border-l-8 border-r-2 border-cod-gray-200 py-4 px-[2px]"
+        class="border-l-8 border-r-2 border-cod-gray-200 px-[2px] py-4"
       ></div>
       <img
         src="~/assets/image/icon.webp"
         alt="Logo"
-        class="w-10 h-10 object-cover rounded-full border-2 p-[0.2rem] border-white"
+        class="h-10 w-10 rounded-full border-2 border-white object-cover p-[0.2rem]"
       />
       <h1 class="text-lg font-bold antialiased">UnknownRori</h1>
-      <IconBadgeVue class="text-xs font-light justify-start">
+      <IconBadgeVue class="justify-start text-xs font-light">
         v0.0.0
       </IconBadgeVue>
     </header>
 
     <IconHamburgerVue class="xl:hidden" @click="openNavbar = !openNavbar" />
     <div
-      :class="`sm:absolute xl:relative sm:w-full xl:w-auto sm:items-start sm:p-4 xl:p-0 sm:-left-[38rem] xl:left-0 xl:translate-x-0 xl:top-0 sm:top-14 flex sm:flex-col xl:flex-row gap-4 sm:bg-black sm:bg-opacity-90 xl:bg-transparent z-20 duration-500 transition-transform ${
+      :class="`z-20 flex gap-4 transition-transform duration-500 sm:absolute sm:-left-[38rem] sm:top-14 sm:w-full sm:flex-col sm:items-start sm:bg-black sm:bg-opacity-90 sm:p-4 xl:relative xl:left-0 xl:top-0 xl:w-auto xl:translate-x-0 xl:flex-row xl:bg-transparent xl:p-0 ${
         openNavbar ? 'sm:translate-x-[38rem]' : ''
       }`"
     >
