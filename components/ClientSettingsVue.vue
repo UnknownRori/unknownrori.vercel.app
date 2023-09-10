@@ -7,8 +7,12 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <button class="motion-safe:hover:animate-spin h-8" @click="isOpen = true">
+  <button
+    class="items-center gap-2 xl:motion-safe:hover:animate-spin h-8 flex justify-center"
+    @click="isOpen = true"
+  >
     <SettingsIcon class="w-8 h-8 m-0 p-0" :font-controlled="false" filled />
+    <span class="sm:block xl:hidden">Preferences</span>
   </button>
 
   <PopoutVue :is-open="isOpen">

@@ -1,11 +1,10 @@
 <script setup lang="ts">
 const ready = ref(false);
-const mouse: Ref<null | HTMLElement>= ref(null);
+const mouse: Ref<null | HTMLElement> = ref(null);
 const pressed = ref(false);
 
 function mouseMoveHandler(e: MouseEvent) {
-  if (mouse.value == null)
-    return;
+  if (mouse.value == null) return;
 
   ready.value = true;
 
@@ -18,7 +17,7 @@ function moveMouse(x: number, y: number) {
 }
 
 function mouseClickHandler(e: MouseEvent) {
-  if (e.button == 0 || e.button == 2)  {
+  if (e.button == 0 || e.button == 2) {
     pressed.value = !pressed.value;
     setTimeout(() => {
       pressed.value = !pressed.value;
@@ -30,17 +29,23 @@ onMounted(() => {
   document.addEventListener("mousemove", mouseMoveHandler);
   document.addEventListener("click", mouseClickHandler);
   document.addEventListener("contextmenu", mouseClickHandler);
-})
+});
 
 onUnmounted(() => {
   document.removeEventListener("mousemove", mouseMoveHandler);
   document.removeEventListener("click", mouseClickHandler);
   document.removeEventListener("contextmenu", mouseClickHandler);
-})
+});
 </script>
 
 <template>
-  <span v-show="ready" ref="mouse" :class="`absolute bg-white p-[1rem] rounded-full mix-blend-difference pointer-events-none z-[100000] shadow shadow-cod-gray-800 ${pressed ? 'animate-click' : ''}`"></span>
+  <span
+    v-show="ready"
+    ref="mouse"
+    :class="`absolute sm:bg-transparent xl:bg-white p-[1rem] rounded-full mix-blend-difference pointer-events-none z-[100000] shadow shadow-cod-gray-800 ${
+      pressed ? 'animate-click' : ''
+    }`"
+  ></span>
 </template>
 
 <style scoped>

@@ -5,6 +5,8 @@ import TerminalIcon from "~/assets/icon/Terminal.svg";
 import IDCardIcon from "~/assets/icon/IDCard.svg";
 import PeopleIcon from "~/assets/icon/People.svg";
 
+const openNavbar = ref(false);
+
 const routes = [
   { title: "Home", icon: HomeIcon, href: "/" },
   { title: "Blog", icon: ScrollIcon, disabled: true, href: "/blog" },
@@ -33,7 +35,12 @@ const routes = [
       </IconBadgeVue>
     </header>
 
-    <div class="flex flex-row gap-4">
+    <IconHamburgerVue class="xl:hidden" @click="openNavbar = !openNavbar" />
+    <div
+      :class="`sm:absolute xl:relative sm:w-full xl:w-auto sm:items-start sm:p-4 xl:p-0 sm:-left-[38rem] xl:left-0 xl:translate-x-0 xl:top-0 sm:top-14 flex sm:flex-col xl:flex-row gap-4 sm:bg-black sm:bg-opacity-90 xl:bg-transparent z-20 duration-500 transition-transform ${
+        openNavbar ? 'sm:translate-x-[38rem]' : ''
+      }`"
+    >
       <NavigationListVue :links="routes" />
       <ClientSettingsVue />
     </div>

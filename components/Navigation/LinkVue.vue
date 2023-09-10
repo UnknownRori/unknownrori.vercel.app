@@ -29,7 +29,7 @@ watch(
     <NuxtLink
       v-if="!$props.disabled"
       :to="$props.href"
-      :class="`relative flex justify-evenly gap-2 px-4 py-2 bg-opacity-50 duration-500 ${
+      :class="`relative flex justify-evenly gap-2 px-4 py-2 bg-opacity-50 duration-500 sm:w-full sm:justify-start xl:w-auto ${
         isActive
           ? 'text-white bg-cod-gray-700 pb-4 rounded-t'
           : 'text-cod-gray-400 rounded bg-cod-gray-950'
@@ -64,7 +64,7 @@ watch(
 
     <span
       v-else
-      class="flex relative justify-evenly gap-2 text-cod-gray-800 px-4 py-2 pb-2 mb-2 z-10 cursor-not-allowed"
+      class="flex relative justify-evenly gap-2 text-cod-gray-800 px-4 py-2 pb-2 mb-2 z-10 sm:w-full sm:justify-start xl:w-auto cursor-not-allowed"
     >
       <span
         class="absolute -top-1 left-0 bg-cod-gray-500 w-0 h-[2px] group-hover:w-full duration-300"
