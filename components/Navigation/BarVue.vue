@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import SignalIcon from "~/assets/icon/Signal.svg";
+import HomeIcon from "~/assets/icon/Home.svg";
 import ScrollIcon from "~/assets/icon/Scroll.svg";
 import TerminalIcon from "~/assets/icon/Terminal.svg";
 import IDCardIcon from "~/assets/icon/IDCard.svg";
 import PeopleIcon from "~/assets/icon/People.svg";
 
 const routes = [
-  { title: "Home", icon: SignalIcon, href: "/" },
+  { title: "Home", icon: HomeIcon, href: "/" },
   { title: "Blog", icon: ScrollIcon, disabled: true, href: "/blog" },
   { title: "Projects", icon: TerminalIcon, disabled: true, href: "/projects" },
   { title: "Resume", icon: IDCardIcon, disabled: true, href: "/resume" },
