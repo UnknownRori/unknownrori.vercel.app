@@ -1,5 +1,8 @@
 <script setup lang="ts">
-// TODO : Refactor this Hamburger so it's little bit more optimized on using `ref`
+const props = defineProps<{
+  isOpen: boolean,
+}>();
+
 const emits = defineEmits<{
   (e: "click"): void;
 }>();
@@ -7,15 +10,14 @@ const emits = defineEmits<{
 const state = ref(false);
 const style = ref("");
 
-function clickAction() {
-  style.value = state.value == true ? "animate-hamburger-block-open" : "";
-  state.value = !state.value;
-  emits("click");
-}
+watch(() => props.isOpen, () => {
+  style.value = props.isOpen ? "animate-hamburger-block-open" : "";
+})
+
 </script>
 
 <template>
-  <button @click="clickAction" class="flex flex-col gap-[5px]">
+  <button @click="$emit('click')" class="flex flex-col gap-[5px]">
     <span
       :class="`w-10 rounded-full bg-white py-[3px] duration-500 ${style}`"
     ></span>
