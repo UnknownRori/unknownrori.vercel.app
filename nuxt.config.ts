@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-svgo",
     "@kevinmarrec/nuxt-pwa",
+    "@nuxtjs/supabase",
   ],
   buildModules: ["@nuxt/typescript-build"],
   // ssr: false,
@@ -35,5 +36,13 @@ export default defineNuxtConfig({
       twitterCard: "summary",
       twitterCreator: "UnknownRori",
     },
+  },
+  supabase: {
+    redirect: false,
+    redirectOptions: {
+      login: '/login',
+      callback: '/confirm',
+      exclude: [],
+    }
   },
 });

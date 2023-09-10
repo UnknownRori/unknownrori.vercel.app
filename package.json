@@ -17,6 +17,7 @@
     "@nuxt/typescript-runtime": "^3.0.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/supabase": "^1.1.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.49.0",
