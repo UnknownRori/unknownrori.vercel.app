@@ -1,5 +1,6 @@
 <template>
   <EditorOverlayVue />
+  <AnimationCursorVue />
 
   <div
     class="fixed top-0 left-0 w-full h-full bg-black bg-[url(~/assets/image/background.jpg)] pointer-events-none -z-10 bg-cover bg-no-repeat"
