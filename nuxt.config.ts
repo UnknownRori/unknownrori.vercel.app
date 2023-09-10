@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       ogSiteName: "UnknownRori's personal site",
       ogDescription: "UnknownRori's personal site",
       ogHost: "https://unknownrori.vercel.app",
-      ogImg: {
+      ogImage: {
         path: "/cover.png",
         width: 1366,
         height: 653,
