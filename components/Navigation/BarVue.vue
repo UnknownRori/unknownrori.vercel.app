@@ -10,7 +10,7 @@ const openNavbar = ref(false);
 const routes = [
   { title: "Home", icon: HomeIcon, href: "/" },
   { title: "Blog", icon: ScrollIcon, disabled: true, href: "/blog" },
-  { title: "Projects", icon: TerminalIcon, disabled: true, href: "/projects" },
+  { title: "Projects", icon: TerminalIcon, href: "/projects" },
   { title: "Resume", icon: IDCardIcon, disabled: true, href: "/resume" },
   { title: "Social", icon: PeopleIcon, href: "/social" },
 ];
