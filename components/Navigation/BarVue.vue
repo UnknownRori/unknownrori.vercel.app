@@ -6,6 +6,7 @@ import IDCardIcon from "~/assets/icon/IDCard.svg";
 import PeopleIcon from "~/assets/icon/People.svg";
 
 const openNavbar = ref(false);
+const version = useVersion();
 
 const routes = [
   { title: "Home", icon: HomeIcon, href: "/" },
@@ -31,7 +32,7 @@ const routes = [
       />
       <h1 class="text-lg font-bold antialiased">UnknownRori</h1>
       <IconBadgeVue class="justify-start text-xs font-light">
-        v0.0.0
+        {{ version }}
       </IconBadgeVue>
     </header>
 

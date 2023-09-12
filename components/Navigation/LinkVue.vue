@@ -29,7 +29,7 @@ watch(
     <NuxtLink
       v-if="!$props.disabled"
       :to="$props.href"
-      :class="`relative flex justify-evenly gap-2 bg-opacity-50 px-4 py-2 duration-500 sm:w-full sm:justify-start xl:w-auto ${
+      :class="`relative flex justify-evenly gap-2 bg-opacity-50 px-4 py-2 duration-500 hover:text-white sm:w-full sm:justify-start xl:w-auto ${
         isActive
           ? 'rounded-t bg-cod-gray-700 pb-4 text-white'
           : 'rounded bg-cod-gray-950 text-cod-gray-400'
@@ -47,7 +47,7 @@ watch(
             ? 'text-white'
             : $props.disabled
             ? 'text-cod-gray-800'
-            : 'text-cod-gray-400'
+            : 'text-cod-gray-400 hover:text-white'
         } `"
         :font-controlled="false"
         filled
