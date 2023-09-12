@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@nuxt/image": "1.0.0-rc.1",
+    "blobity": "^0.2.3",
     "moment": "^2.29.4"
   }
 }

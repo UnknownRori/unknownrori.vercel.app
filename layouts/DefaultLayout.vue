@@ -1,6 +1,9 @@
+<script setup lang="ts">
+useBlobity();
+</script>
+
 <template>
   <EditorOverlayVue />
-  <AnimationCursorVue />
 
   <div
     class="pointer-events-none fixed left-0 top-0 -z-10 h-full w-full bg-black bg-[url(/image/background.webp)] bg-cover bg-no-repeat"
