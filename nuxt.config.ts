@@ -50,10 +50,12 @@ export default defineNuxtConfig({
     },
   },
   image: {
+    provider: "vercel",
+    format: ["webp"],
     domains: [
-      'https://githubusercontent.com',
-      'https://githubassets.com',
-      'https://github.com',
+      "https://githubusercontent.com",
+      "https://githubassets.com",
+      "https://github.com",
     ],
   }
 });

@@ -27,6 +27,7 @@ const routes = [
       ></div>
       <NuxtImg
         src="/image/icon.webp"
+        width="200"
         class="h-10 w-10 rounded-full border-2 border-white object-cover p-[0.2rem]"
         placeholder
       />
