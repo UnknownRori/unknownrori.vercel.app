@@ -31,10 +31,10 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
         </div>
         <div class="flex flex-col gap-2 p-4">
           <figure class="flex flex-col items-center">
-            <img
-              src="~/assets/image/UnknownRori.webp"
-              alt="UnknownRori"
+            <NuxtImg
+              src="/image/UnknownRori.webp"
               class="h-28 w-28 rounded-full object-cover"
+              placeholder
             />
             <h1 class="text-2xl font-medium tracking-wide antialiased">
               UnknownRori

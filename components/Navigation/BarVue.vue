@@ -24,10 +24,10 @@ const routes = [
       <div
         class="border-l-8 border-r-2 border-cod-gray-200 px-[2px] py-4"
       ></div>
-      <img
-        src="~/assets/image/icon.webp"
-        alt="Logo"
+      <NuxtImg
+        src="/image/icon.webp"
         class="h-10 w-10 rounded-full border-2 border-white object-cover p-[0.2rem]"
+        placeholder
       />
       <h1 class="text-lg font-bold antialiased">UnknownRori</h1>
       <IconBadgeVue class="justify-start text-xs font-light">

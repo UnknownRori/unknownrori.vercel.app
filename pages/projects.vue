@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import GithubIcon from "~/assets/social-icon/github.webp";
 import LinkIcon from "~/assets/icon/LinkOpen.svg";
 
 import Project from "~/types/project";
@@ -26,11 +25,7 @@ const { data: projects } = await useFetch<ProjectResult>("/api/v1/projects", {
       class="divide-2 flex w-full flex-col gap-1 rounded bg-opacity-60"
     >
       <header>
-        <img
-          :src="project?.img_url"
-          :alt="project?.title"
-          class="h-36 w-full rounded object-cover"
-        />
+        <NuxtImg :src="project?.img_url" placeholder />
         <div class="flex items-center gap-1 p-2">
           <h1 class="px-4 text-xl font-bold tracking-wide">
             {{ project?.title }}
@@ -41,7 +36,7 @@ const { data: projects } = await useFetch<ProjectResult>("/api/v1/projects", {
             target="_blank"
             class="rounded"
           >
-            <img :src="GithubIcon" alt="Github" class="w-6" />
+            <NuxtImg src="/social-icon/github.webp" class="w-6" placeholder />
           </a>
           <a
             v-if="project?.deployment_url"
