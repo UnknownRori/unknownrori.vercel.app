@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  isOpen: boolean,
+  isOpen: boolean;
 }>();
 
 const emits = defineEmits<{
@@ -10,10 +10,12 @@ const emits = defineEmits<{
 const state = ref(false);
 const style = ref("");
 
-watch(() => props.isOpen, () => {
-  style.value = props.isOpen ? "animate-hamburger-block-open" : "";
-})
-
+watch(
+  () => props.isOpen,
+  () => {
+    style.value = props.isOpen ? "animate-hamburger-block-open" : "";
+  },
+);
 </script>
 
 <template>

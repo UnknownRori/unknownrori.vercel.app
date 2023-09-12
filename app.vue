@@ -41,7 +41,7 @@ const isDummyLoadingDone = ref(false);
 
   <Transition>
     <NuxtLayout name="default-layout">
-      <main v-if="isDummyLoadingDone">
+      <main v-show="isDummyLoadingDone" class="h-full">
         <NuxtPage />
       </main>
     </NuxtLayout>

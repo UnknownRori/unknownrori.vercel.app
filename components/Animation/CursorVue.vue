@@ -8,7 +8,7 @@ function mouseMoveHandler(e: MouseEvent) {
 
   ready.value = true;
 
-  moveMouse(e.pageX, e.pageY);
+  moveMouse(e.clientX, e.clientY);
 }
 
 function moveMouse(x: number, y: number) {
@@ -42,10 +42,12 @@ onUnmounted(() => {
   <span
     v-show="ready"
     ref="mouse"
-    :class="`pointer-events-none absolute z-[100000] rounded-full p-[1rem] mix-blend-difference shadow shadow-cod-gray-800 sm:bg-transparent xl:bg-white ${
+    :class="`pointer-events-none fixed z-[100000] flex items-center justify-center rounded-full p-[0.8rem] mix-blend-difference shadow shadow-cod-gray-800 sm:bg-transparent xl:bg-white ${
       pressed ? 'animate-click' : ''
     }`"
-  ></span>
+  >
+    <span class="rounded-full bg-green-600 p-[0.2rem]"></span>
+  </span>
 </template>
 
 <style scoped>

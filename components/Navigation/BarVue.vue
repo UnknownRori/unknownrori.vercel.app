@@ -35,7 +35,11 @@ const routes = [
       </IconBadgeVue>
     </header>
 
-    <IconHamburgerVue class="xl:hidden" :is-open="openNavbar" @click="openNavbar = !openNavbar" />
+    <IconHamburgerVue
+      class="xl:hidden"
+      :is-open="openNavbar"
+      @click="openNavbar = !openNavbar"
+    />
     <div
       :class="`z-20 flex gap-4 transition-transform duration-500 sm:absolute sm:-left-[100vw] sm:top-14 sm:w-full sm:flex-col sm:items-start sm:bg-black sm:bg-opacity-90 sm:p-4 xl:relative xl:left-0 xl:top-0 xl:w-auto xl:translate-x-0 xl:flex-row xl:bg-transparent xl:p-0 ${
         openNavbar ? 'sm:translate-x-[100vw]' : ''
