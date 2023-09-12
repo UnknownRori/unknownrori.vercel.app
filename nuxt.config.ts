@@ -25,17 +25,20 @@ export default defineNuxtConfig({
     meta: {
       name: "UnknownRori's personal site",
       author: "UnknownRori",
-      ogSiteName: "UnknownRori's personal site",
+      ogSiteName: "UnknownRori",
       ogDescription: "UnknownRori's personal site",
       ogHost: "https://unknownrori.vercel.app",
+      ogTitle: "UnknownRori's personal site",
+      ogUrl: "https://unknownrori.vercel.app",
       ogImage: {
         path: "/cover.png",
         width: 1366,
         height: 653,
         type: "image/png",
       },
-      twitterCard: "summary",
-      twitterCreator: "UnknownRori",
+      twitterCard: "summary_large_image",
+      twitterSite: "@UnknownRori",
+      twitterCreator: "@UnknownRori",
     },
   },
   supabase: {

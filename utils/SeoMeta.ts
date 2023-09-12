@@ -15,11 +15,17 @@ export function generateSeoMeta(opts: SeoMetaOpts) {
     ogUrl: "https://unknownrori.vercel.app",
     ogType: "website",
     ogTitle: "UnknownRori's personal site",
+    ogImage: {
+      path: "/cover.png",
+      width: 1366,
+      height: 653,
+      type: "image/png",
+    },
     ogDescription: "Unknownrori personal site",
     ogSiteName: "UnknownRori",
     ogLocale: "en_US",
 
-    twitterCard: "summary",
+    twitterCard: "summary_large_image",
     twitterSite: "@UnknownRori",
     twitterCreator: "@UnknownRori",
     twitterTitle: opts.title,
