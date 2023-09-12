@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "nuxt-svgo",
     "@kevinmarrec/nuxt-pwa",
     "@nuxtjs/supabase",
+    "@nuxt/image",
   ],
   buildModules: ["@nuxt/typescript-build"],
   // ssr: false,
