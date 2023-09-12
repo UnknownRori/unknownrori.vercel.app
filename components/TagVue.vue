@@ -7,12 +7,12 @@ defineProps<{
 </script>
 
 <template>
-  <span
+  <button
     class="flex items-center justify-center gap-2 rounded bg-cod-gray-700 bg-opacity-40 p-1"
   >
     <TagIcon class="w-4" :font-controlled="false" filled />
     <span class="text-xs">
       {{ text }}
     </span>
-  </span>
+  </button>
 </template>

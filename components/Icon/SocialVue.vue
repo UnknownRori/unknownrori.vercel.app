@@ -24,7 +24,7 @@ defineProps<{
       <div class="relative flex h-full items-center justify-center">
         <NuxtImg :src="$props.src" class="w-24 p-2" placeholder />
         <span
-          class="absolute bottom-0 left-0 h-0 w-full rounded-b-md bg-cod-gray-500 bg-opacity-10 transition-all duration-500 group-hover:h-full"
+          class="pointer-events-none absolute bottom-0 left-0 h-0 w-full rounded-b-md bg-cod-gray-500 bg-opacity-10 transition-all duration-500 group-hover:h-full"
         ></span>
       </div>
     </a>
