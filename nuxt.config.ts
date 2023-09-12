@@ -41,9 +41,16 @@ export default defineNuxtConfig({
   supabase: {
     redirect: false,
     redirectOptions: {
-      login: '/login',
-      callback: '/confirm',
+      login: "/login",
+      callback: "/confirm",
       exclude: [],
-    }
+    },
   },
+  image: {
+    domains: [
+      'https://githubusercontent.com',
+      'https://githubassets.com',
+      'https://github.com',
+    ],
+  }
 });
