@@ -52,7 +52,7 @@ watch(
         :font-controlled="false"
         filled
       />
-      <span class="z-10">
+      <span class="z-10 sm:block md:hidden xl:block">
         {{ $props.title }}
       </span>
       <span
@@ -80,7 +80,7 @@ watch(
         :font-controlled="false"
         filled
       />
-      <span>
+      <span class="z-10 sm:block md:hidden xl:block">
         {{ $props.title }}
       </span>
       <span

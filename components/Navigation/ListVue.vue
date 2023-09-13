@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <ul class="flex gap-2 sm:w-full sm:flex-col xl:w-auto xl:flex-row">
+  <ul class="flex gap-2 sm:w-full sm:flex-col md:w-auto md:flex-row">
     <NavigationLinkVue
       v-for="(link, id) in $props.links"
       :key="id"

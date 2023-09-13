@@ -12,7 +12,7 @@ const isOpen = ref(false);
     @click="isOpen = true"
   >
     <SettingsIcon class="m-0 h-8 w-8 p-0" :font-controlled="false" filled />
-    <span class="sm:block xl:hidden">Preferences</span>
+    <span class="sm:block md:hidden">Preferences</span>
   </button>
 
   <PopoutVue :is-open="isOpen">

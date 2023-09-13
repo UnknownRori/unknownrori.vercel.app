@@ -19,7 +19,7 @@ const routes = [
 
 <template>
   <nav
-    class="m-0 mt-4 flex flex-row items-start justify-between gap-4 border-b-2 border-cod-gray-500 px-8"
+    class="m-0 mt-4 flex flex-row items-start justify-between gap-4 border-b-2 border-cod-gray-500 px-8 sm:py-2 md:py-0"
   >
     <header class="flex items-center gap-2">
       <div
@@ -32,18 +32,20 @@ const routes = [
         placeholder
       />
       <h1 class="text-lg font-bold antialiased">UnknownRori</h1>
-      <IconBadgeVue class="justify-start text-xs font-light">
+      <IconBadgeVue
+        class="justify-start text-xs font-light sm:block md:hidden xl:block"
+      >
         {{ version }}
       </IconBadgeVue>
     </header>
 
     <IconHamburgerVue
-      class="xl:hidden"
+      class="md:hidden"
       :is-open="openNavbar"
       @click="openNavbar = !openNavbar"
     />
     <div
-      :class="`z-20 flex gap-4 transition-transform duration-500 sm:absolute sm:-left-[100vw] sm:top-14 sm:w-full sm:flex-col sm:items-start sm:bg-black sm:bg-opacity-90 sm:p-4 xl:relative xl:left-0 xl:top-0 xl:w-auto xl:translate-x-0 xl:flex-row xl:bg-transparent xl:p-0 ${
+      :class="`z-20 flex gap-4 transition-transform duration-500 sm:absolute sm:-left-[100vw] sm:top-14 sm:w-full sm:flex-col sm:items-start sm:bg-black sm:bg-opacity-90 sm:p-4 md:relative md:left-0 md:top-0 md:w-auto md:translate-x-0 md:flex-row md:bg-transparent md:p-0 ${
         openNavbar ? 'sm:translate-x-[100vw]' : ''
       }`"
     >
