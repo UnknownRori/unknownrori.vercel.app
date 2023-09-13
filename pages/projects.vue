@@ -25,7 +25,12 @@ const { data: projects } = await useFetch<ProjectResult>("/api/v1/projects", {
       class="divide-2 flex w-full flex-col gap-1 rounded bg-opacity-60"
     >
       <header>
-        <NuxtImg :src="project?.img_url" placeholder />
+        <NuxtImg
+          :src="project?.img_url"
+          sizes="sm:100vw md:50vw lg:400px"
+          format="webp"
+          placeholder
+        />
         <div class="flex items-center gap-1 p-2">
           <h1 class="px-4 text-xl font-bold tracking-wide">
             {{ project?.title }}

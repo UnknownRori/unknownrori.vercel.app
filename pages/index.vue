@@ -33,6 +33,7 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
           <figure class="flex flex-col items-center">
             <NuxtImg
               src="/image/UnknownRori.webp"
+              sizes="sm:30vw md:25vw lg:300px"
               class="h-28 w-28 rounded-full object-cover"
               placeholder
             />
