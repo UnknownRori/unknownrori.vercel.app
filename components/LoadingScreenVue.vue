@@ -75,9 +75,9 @@ onBeforeMount(async () => {
 <template>
   <Transition name="fade">
     <div
-      v-if="$props.show"
+      v-show="$props.show"
       id="loading"
-      class="absolute inset-0 z-50 z-[10000] flex h-screen w-screen flex-col items-center justify-center gap-2 bg-black bg-[url(~/assets/icon/Grid.svg)]"
+      class="absolute inset-0 z-[10000] flex h-screen w-screen flex-col items-center justify-center gap-2 bg-black bg-[url(~/assets/icon/Grid.svg)]"
     >
       <div
         class="absolute inset-0 z-10 w-screen bg-gradient-to-b from-transparent from-40% to-black to-80%"
