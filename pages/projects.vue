@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import LinkIcon from "~/assets/icon/LinkOpen.svg";
-
 import Project from "~/types/project";
 
 type ProjectResult = {
