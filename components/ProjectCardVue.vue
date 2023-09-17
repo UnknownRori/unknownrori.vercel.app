@@ -10,7 +10,6 @@ const imagePreviewOpen = ref(false);
 
 <template>
   <CardVue class="divide-2 flex w-full flex-col gap-1 rounded bg-opacity-60">
-
     <PreviewImageVue
       :src="$props.project?.img_url"
       :is-open="imagePreviewOpen"
@@ -22,6 +21,7 @@ const imagePreviewOpen = ref(false);
       <button @click="imagePreviewOpen = true">
         <NuxtImg
           :src="$props.project?.img_url"
+          class="rounded"
           sizes="sm:100vw md:50vw lg:400px"
           format="webp"
           placeholder
