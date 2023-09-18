@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     provider: "vercel",
     format: ["webp"],
     domains: [
+      "https://user-images.githubusercontent.com",
       "https://images.githubusercontent.com",
       "https://opengraph.githubassets.com",
       "https://github.com",
