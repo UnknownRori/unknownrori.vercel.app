@@ -20,7 +20,6 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
       <CardVue
         class="flex flex-col justify-center bg-opacity-50 font-light sm:w-full xl:w-[24vw]"
       >
-        <!-- TODO : Change color -->
         <div
           class="group relative rounded-t-md bg-cod-gray-900 bg-opacity-50 px-4 py-1"
         >
@@ -43,7 +42,6 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
             <h3 class="text-sm tracking-tight">@UnknownRori / Akbar</h3>
           </figure>
           <div class="flex flex-col sm:self-center xl:self-start">
-            <!-- TODO : Maybe Refactor this into seperate components -->
             <span class="flex items-center gap-1">
               <BuildingIcon
                 class="h-4 w-4 text-white"
@@ -69,7 +67,6 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
               {{ clock }}
             </span>
             <span class="flex items-center gap-1">
-              <!-- TODO : Maybe switch to flags instead of name -->
               <ChatIcon
                 class="h-4 w-4 text-white"
                 :font-controlled="false"
@@ -82,7 +79,7 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
       </CardVue>
     </section>
 
-    <section>
+    <section class="flex flex-col gap-4">
       <CardVue class="flex flex-col gap-2 bg-opacity-50">
         <div
           class="group relative rounded-t-md bg-cod-gray-900 bg-opacity-50 px-4 py-1"
