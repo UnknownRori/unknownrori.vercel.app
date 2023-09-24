@@ -8,6 +8,7 @@ defineProps<{
 }>();
 
 const imagePreviewOpen = ref(false);
+const previewFrameOpen = ref(false);
 </script>
 
 <template>
@@ -17,6 +18,13 @@ const imagePreviewOpen = ref(false);
       :is-open="imagePreviewOpen"
       @close="imagePreviewOpen = false"
       @click-outside="imagePreviewOpen = false"
+    />
+
+    <IFrameWindowVue
+      v-if="$props.project?.deployment_url"
+      :src="$props.project?.deployment_url"
+      :is-open="previewFrameOpen"
+      @close="previewFrameOpen = false"
     />
 
     <header>
@@ -41,14 +49,14 @@ const imagePreviewOpen = ref(false);
         >
           <NuxtImg src="/social-icon/github.webp" class="w-6" placeholder />
         </a>
-        <a
+
+        <button
           v-if="$props.project?.deployment_url"
-          :href="$props.project?.deployment_url"
-          target="_blank"
           class="rounded"
+          @click="previewFrameOpen = true"
         >
           <LinkIcon class="w-6" :font-controlled="false" filled />
-        </a>
+        </button>
       </div>
     </header>
     <main
