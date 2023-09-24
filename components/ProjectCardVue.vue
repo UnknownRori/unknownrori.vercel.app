@@ -20,7 +20,8 @@ const previewFrameOpen = ref(false);
       @click-outside="imagePreviewOpen = false"
     />
 
-    <IFrameWindowVue 
+    <IFrameWindowVue
+      v-if="$props.project?.deployment_url"
       :src="$props.project?.deployment_url"
       :is-open="previewFrameOpen"
       @close="previewFrameOpen = false"
@@ -49,17 +50,13 @@ const previewFrameOpen = ref(false);
           <NuxtImg src="/social-icon/github.webp" class="w-6" placeholder />
         </a>
 
-        <div v-if="$props.project?.deployment_url" class="rounded" @click="previewFrameOpen = true">
+        <button
+          v-if="$props.project?.deployment_url"
+          class="rounded"
+          @click="previewFrameOpen = true"
+        >
           <LinkIcon class="w-6" :font-controlled="false" filled />
-        </div>
-        <!-- <a -->
-        <!--   v-if="$props.project?.deployment_url" -->
-        <!--   :href="$props.project?.deployment_url" -->
-        <!--   target="_blank" -->
-        <!--   class="rounded" -->
-        <!-- > -->
-        <!--   <LinkIcon class="w-6" :font-controlled="false" filled /> -->
-        <!-- </a> -->
+        </button>
       </div>
     </header>
     <main
