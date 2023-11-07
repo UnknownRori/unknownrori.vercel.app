@@ -5,7 +5,7 @@ const WakatimeIcon = "/social-icon/wakatime.webp";
 const ItchIOIcon = "/social-icon/itch-io.webp";
 const InstagramIcon = "/social-icon/instagram.webp";
 const TwitterIcon = "/social-icon/twitter-old.webp";
-const FacebookIcon = "/social-icon/facebook.webp";
+// const FacebookIcon = "/social-icon/facebook.webp";
 const WhatsappIcon = "/social-icon/whatsapp.webp";
 const DiscordIcon = "/social-icon/discord.webp";
 const LinkedinIcon = "/social-icon/linkedin.webp";
@@ -16,6 +16,7 @@ const FigmaIcon = "/social-icon/figma.webp";
 const FreecodecampIcon = "/social-icon/freecodecamp.webp";
 const CratesIOIcon = "/social-icon/crates-io.webp";
 const PackagistIcon = "/social-icon/packagist.webp";
+const PatreonIcon = "/social-icon/patreon.webp";
 
 const socialMediaLinks = [
   { alt: "Github", href: "https://github.com/UnknownRori", src: GithubIcon },
@@ -41,8 +42,9 @@ const socialMediaLinks = [
     src: InstagramIcon,
   },
   { alt: "Twitter", href: "https://twitter.com/UnknownRori", src: TwitterIcon },
-  { alt: "Facebook", href: "#", src: FacebookIcon },
-  { alt: "Whatsapp", href: "#", src: WhatsappIcon },
+  { alt: "Patreon", href: "https://www.patreon.com/UnknownRori", src: PatreonIcon },
+  // { alt: "Facebook", href: "#", src: FacebookIcon },
+  { alt: "Whatsapp", href: "https://wa.me/+62895422378238", src: WhatsappIcon },
   {
     alt: "Discord",
     href: "https://discord.com/users/611902987744313345",
@@ -58,7 +60,7 @@ const socialMediaLinks = [
     href: "mailto:UnknownRori@proton.me",
     src: ProtonMailIcon,
   },
-  { alt: "Blogspot", href: "#", src: BlogspotIcon },
+  { alt: "Blogspot", href: "https://unknownrori-blogspot.blogspot.com/", src: BlogspotIcon },
   {
     alt: "Steam",
     href: "https://steamcommunity.com/id/UnknownRori/",
