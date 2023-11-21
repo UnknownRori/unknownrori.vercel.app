@@ -64,7 +64,7 @@ watch(
 
     <span
       v-else
-      class="relative z-10 mb-2 flex cursor-not-allowed justify-evenly gap-2 px-4 py-2 pb-2 text-cod-gray-800 sm:w-full sm:justify-start xl:w-auto"
+      class="relative z-10 mb-2 flex cursor-not-allowed justify-evenly gap-2 px-4 py-2 text-cod-gray-800 sm:w-full sm:justify-start xl:w-auto"
     >
       <span
         class="absolute -top-1 left-0 h-[2px] w-0 bg-cod-gray-500 duration-300 group-hover:w-full"

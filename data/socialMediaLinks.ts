@@ -42,7 +42,11 @@ const socialMediaLinks = [
     src: InstagramIcon,
   },
   { alt: "Twitter", href: "https://twitter.com/UnknownRori", src: TwitterIcon },
-  { alt: "Patreon", href: "https://www.patreon.com/UnknownRori", src: PatreonIcon },
+  {
+    alt: "Patreon",
+    href: "https://www.patreon.com/UnknownRori",
+    src: PatreonIcon,
+  },
   // { alt: "Facebook", href: "#", src: FacebookIcon },
   { alt: "Whatsapp", href: "https://wa.me/+62895422378238", src: WhatsappIcon },
   {
@@ -60,7 +64,11 @@ const socialMediaLinks = [
     href: "mailto:UnknownRori@proton.me",
     src: ProtonMailIcon,
   },
-  { alt: "Blogspot", href: "https://unknownrori-blogspot.blogspot.com/", src: BlogspotIcon },
+  {
+    alt: "Blogspot",
+    href: "https://unknownrori-blogspot.blogspot.com/",
+    src: BlogspotIcon,
+  },
   {
     alt: "Steam",
     href: "https://steamcommunity.com/id/UnknownRori/",

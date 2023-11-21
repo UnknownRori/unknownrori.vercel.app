@@ -4,7 +4,9 @@ const props = defineProps({
 });
 
 const quote: Ref<Quote | null> = ref(null);
-const customSeo = generateSeoMeta({ title: `UnknownRori - ${props.error?.statusCode}` });
+const customSeo = generateSeoMeta({
+  title: `UnknownRori - ${props.error?.statusCode}`,
+});
 useSeoMeta(customSeo as any);
 
 onMounted(async () => {
@@ -24,8 +26,13 @@ onMounted(async () => {
       <h2 class="text-4xl">{{ $props.error?.message }}</h2>
       <ClientOnly>
         <Transition>
-          <div v-show="quote != null" class="mt-4 flex flex-col items-center justify-center gap-2">
-            <h3 class="font-mono text-lg tracking-wide">"{{ quote.content }}"</h3>
+          <div
+            v-show="quote != null"
+            class="mt-4 flex flex-col items-center justify-center gap-2"
+          >
+            <h3 class="font-mono text-lg tracking-wide">
+              "{{ quote.content }}"
+            </h3>
             <span class="italic">{{ quote.author }}</span>
           </div>
         </Transition>

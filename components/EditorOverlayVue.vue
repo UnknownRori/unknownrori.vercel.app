@@ -36,7 +36,6 @@ onMounted(() => {
     if (event.key == ":" && !isActivated.value) {
       isActivated.value = true;
       event.preventDefault();
-      return;
     }
   });
   input.value?.addEventListener("focusout", () => {
@@ -55,10 +54,10 @@ onMounted(() => {
       <div class="flex">
         <span>:</span>
         <input
+          ref="input"
           v-model="pressed"
           type="text"
           class="border-none bg-transparent text-white outline-none"
-          ref="input"
         />
       </div>
     </div>

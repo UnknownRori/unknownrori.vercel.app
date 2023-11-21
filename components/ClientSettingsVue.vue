@@ -25,7 +25,7 @@ const isOpen = ref(false);
           Preferences
         </h1>
 
-        <button @click="isOpen = false" class="absolute right-0 top-0">
+        <button class="absolute right-0 top-0" @click="isOpen = false">
           <CloseIcon
             class="h-8 w-8 text-cod-gray-800 duration-300 hover:text-white"
             :font-controlled="false"

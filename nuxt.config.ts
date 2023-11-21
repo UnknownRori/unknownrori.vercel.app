@@ -2,8 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   modules: [
-    "@nuxtjs/eslint-module",
+    ["@nuxtjs/eslint-module", { lintOnStart: false }],
     "@nuxtjs/tailwindcss",
     "nuxt-svgo",
     "@kevinmarrec/nuxt-pwa",

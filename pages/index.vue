@@ -3,6 +3,7 @@ import BuildingIcon from "~/assets/icon/Building.svg";
 import LocationIcon from "~/assets/icon/Location.svg";
 import ClockIcon from "~/assets/icon/Clock.svg";
 import ChatIcon from "~/assets/icon/Chat.svg";
+import LoveIcon from "~/assets/icon/Love.svg";
 
 const customSeo = generateSeoMeta({ title: "UnknownRori - Home" });
 useSeoMeta(customSeo as any);
@@ -65,6 +66,14 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
                 filled
               />
               {{ clock }}
+            </span>
+            <span class="flex items-center gap-1">
+              <LoveIcon
+                class="h-4 w-4 text-white"
+                :font-controlled="false"
+                filled
+              />
+              Coding, Games
             </span>
             <span class="flex items-center gap-1">
               <ChatIcon

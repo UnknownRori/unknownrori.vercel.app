@@ -60,18 +60,6 @@ onBeforeMount(async () => {
 });
 </script>
 
-<style scoped>
-.from-right-enter-active,
-.from-right-leave-active {
-  transition: all 200ms ease;
-}
-.from-right-enter-from,
-.from-right-leave-to {
-  opacity: 0;
-  transform: translateX(30px);
-}
-</style>
-
 <template>
   <Transition name="fade">
     <div
@@ -114,3 +102,15 @@ onBeforeMount(async () => {
     </div>
   </Transition>
 </template>
+
+<style scoped>
+.from-right-enter-active,
+.from-right-leave-active {
+  transition: all 200ms ease;
+}
+.from-right-enter-from,
+.from-right-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+</style>

@@ -16,9 +16,7 @@ defineEmits<{
 <template>
   <PopoutVue :is-open="$props.isOpen" @click-outside="$emit('click-outside')">
     <div class="flex h-screen w-screen flex-col">
-      <header
-        class="flex items-center justify-between bg-cod-gray-500 px-4"
-      >
+      <header class="flex items-center justify-between bg-cod-gray-500 px-4">
         <div class="flex gap-2">
           <ComputerIcon class="w-4" :font-controlled="false" filled />
           <span> Live Demo </span>

@@ -19,7 +19,7 @@ watch(
 </script>
 
 <template>
-  <button @click="$emit('click')" class="flex flex-col gap-[5px]">
+  <button class="flex flex-col gap-[5px]" @click="$emit('click')">
     <span
       :class="`w-10 rounded-full bg-white py-[3px] duration-500 ${style}`"
     ></span>
