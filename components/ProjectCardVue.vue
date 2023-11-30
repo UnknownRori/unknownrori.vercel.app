@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import LinkIcon from "~/assets/icon/LinkOpen.svg";
 
-import Project from "~/types/project";
+import type Project from "~/types/project";
 
 defineProps<{
   project: Project;

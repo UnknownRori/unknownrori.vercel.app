@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Project from "~/types/project";
+import type Project from "~/types/project";
 
 const customSeo = generateSeoMeta({ title: "UnknownRori - Projects" });
 useSeoMeta(customSeo as any);
