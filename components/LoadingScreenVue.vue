@@ -25,6 +25,7 @@ const loadingContents = [
   { time: 42, text: "/assets/css/nuxt.js" },
   { time: 12, text: "/assets/css/tailwind.css" },
   { time: 14, text: "/assets/css/scroll.css" },
+  { time: 8, text: "/assets/particle.json" },
   { time: 62, text: "Loading content..." },
   { time: 82, text: "Content Loaded..." },
   { time: 88, text: "Creating app..." },

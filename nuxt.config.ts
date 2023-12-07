@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@kevinmarrec/nuxt-pwa",
     "@nuxtjs/supabase",
     "@nuxt/image",
+    "nuxt-particles",
   ],
   buildModules: ["@nuxt/typescript-build"],
   // ssr: false,
