@@ -3,10 +3,7 @@ const isDummyLoadingDone = ref(false);
 </script>
 
 <template>
-  <LoadingScreenVue
-    :show="!isDummyLoadingDone"
-    @done="isDummyLoadingDone = true"
-  />
+  <LoadingScreenVue :show="!isDummyLoadingDone" @done="isDummyLoadingDone = true" />
 
   <Transition>
     <NuxtLayout name="default-layout">
