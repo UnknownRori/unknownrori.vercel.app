@@ -17,6 +17,8 @@ const FreecodecampIcon = "/social-icon/freecodecamp.webp";
 const CratesIOIcon = "/social-icon/crates-io.webp";
 const PackagistIcon = "/social-icon/packagist.webp";
 const PatreonIcon = "/social-icon/patreon.webp";
+const SpotifyIcon = "/social-icon/spotify.webp";
+const NpmIcon = "/social-icon/npm.webp";
 
 const socialMediaLinks = [
   { alt: "Github", href: "https://github.com/UnknownRori", src: GithubIcon },
@@ -89,6 +91,16 @@ const socialMediaLinks = [
     alt: "packagist",
     href: "https://packagist.org/packages/unknownrori/",
     src: PackagistIcon,
+  },
+  {
+    alt: "spotify",
+    href: "https://open.spotify.com/user/31r62u3ch2kpe2vmk2bb3daulywy",
+    src: SpotifyIcon,
+  },
+  {
+    alt: "NPM",
+    href: "https://www.npmjs.com/~unknownrori",
+    src: NpmIcon,
   },
 ];
 
