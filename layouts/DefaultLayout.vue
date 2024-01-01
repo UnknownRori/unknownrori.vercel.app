@@ -6,7 +6,7 @@ useBlobity();
 <template>
   <EditorOverlayVue />
 
-  <NuxtParticles id="pageParticles" url="/particles/snow.json" @load="onLoad"></NuxtParticles>
+  <NuxtParticles id="pageParticles" url="/particles/stars.json" @load="onLoad"></NuxtParticles>
   <div
     class="pointer-events-none fixed left-0 top-0 -z-10 h-full w-full bg-black bg-[url(/image/background.webp)] bg-cover bg-no-repeat">
   </div>

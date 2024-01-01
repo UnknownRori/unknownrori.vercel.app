@@ -1,0 +1,89 @@
+{
+  "autoPlay": true,
+  "background": {
+    "color": {
+      "value": "transparent"
+    },
+    "image": "",
+    "position": "",
+    "repeat": "",
+    "size": "",
+    "opacity": 0.1,
+    "zIndex": -10
+  },
+  "backgroundMask": {
+    "composite": "destination-out",
+    "cover": {
+      "color": {
+        "value": "transparent"
+      },
+      "opacity": 1
+    },
+    "enable": false
+  },
+  "clear": true,
+  "defaultThemes": {},
+  "delay": 0,
+  "fullScreen": {
+    "enable": true,
+    "zIndex": 0
+  },
+  "detectRetina": true,
+  "duration": 0,
+  "fpsLimit": 120,
+  "particles": {
+    "number": {
+      "value": 100
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "life": {
+      "count": 1,
+      "duration": {
+        "value": 5
+      }
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.4
+    },
+    "size": {
+      "value": 2.5
+    },
+    "move": {
+      "enable": true,
+      "speed": 10,
+      "decay": 0.005,
+      "direction": "outside",
+      "straight": true,
+      "outModes": "destroy",
+      "trail": {
+        "enable": true,
+        "length": 15,
+        "fill": {
+          "color": "#000000"
+        },
+        "opacity": {
+          "value": 0.4
+        }
+      }
+    }
+  },
+  "emitters": {
+    "position": {
+      "x": 50,
+      "y": 50
+    },
+    "size": {
+      "width": 100,
+      "height": 100
+    },
+    "rate": {
+      "quantity": 10,
+      "delay": 0.1
+    }
+  }
+}
