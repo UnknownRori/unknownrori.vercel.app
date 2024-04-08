@@ -19,6 +19,8 @@ const PackagistIcon = "/social-icon/packagist.webp";
 const PatreonIcon = "/social-icon/patreon.webp";
 const SpotifyIcon = "/social-icon/spotify.webp";
 const NpmIcon = "/social-icon/npm.webp";
+const DeviantartIcon = "/social-icon/deviantart.webp";
+const DribbbleIcon = "/social-icon/dribbble.webp";
 
 const socialMediaLinks = [
   { alt: "Github", href: "https://github.com/UnknownRori", src: GithubIcon },
@@ -101,6 +103,16 @@ const socialMediaLinks = [
     alt: "NPM",
     href: "https://www.npmjs.com/~unknownrori",
     src: NpmIcon,
+  },
+  {
+    alt: "Deviantart",
+    href: "https://www.deviantart.com/unknownrori",
+    src: DeviantartIcon,
+  },
+  {
+    alt: "Dribbble",
+    href: "https://dribbble.com/UnknownRori",
+    src: DribbbleIcon,
   },
 ];
 
