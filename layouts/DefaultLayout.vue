@@ -1,6 +1,14 @@
 <script setup lang="ts">
+// TODO : Create custom toast notification but this will do for now
+import { useToast } from "vue-toast-notification";
+import "vue-toast-notification/dist/theme-sugar.css";
+
 const onLoad = useParticles();
 useBlobity();
+
+if (process.client) {
+  useToast().warning("Currently in development!");
+}
 </script>
 
 <template>
