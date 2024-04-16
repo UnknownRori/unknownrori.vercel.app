@@ -31,7 +31,7 @@ const previewFrameOpen = ref(false);
       <button class="w-full" @click="imagePreviewOpen = true">
         <NuxtImg
           :src="$props.project?.img_url"
-          class="w-full rounded"
+          class="h-[200px] w-full rounded object-cover"
           sizes="sm:100vw md:50vw lg:400px"
           format="webp"
           placeholder
