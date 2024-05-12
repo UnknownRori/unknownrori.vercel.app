@@ -18,13 +18,7 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
       class="animate-l-border-start border-l-8 border-r-2 border-cod-gray-200 px-[2px] duration-1000 sm:hidden xl:block">
     </div>
     <section>
-      <CardVue class="flex flex-col justify-center bg-opacity-50 font-light sm:w-full xl:w-[24vw]">
-        <div class="group relative rounded-t-md bg-cod-gray-900 bg-opacity-50 px-4 py-1">
-          <div
-            class="absolute left-0 top-0 h-full w-0 rounded-t-md bg-cod-gray-800 transition-all duration-500 group-hover:w-full">
-          </div>
-          <span class="relative">Profile</span>
-        </div>
+      <WindowCard title="Profile" class="flex flex-col justify-center font-light sm:w-full xl:w-[24vw]">
         <div class="flex flex-col gap-2 p-4">
           <figure class="flex flex-col items-center">
             <NuxtImg src="/image/UnknownRori.webp" sizes="sm:30vw md:25vw lg:300px"
@@ -58,17 +52,11 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
             </span>
           </div>
         </div>
-      </CardVue>
+      </WindowCard>
     </section>
 
     <section class="flex flex-col gap-4">
-      <CardVue class="flex flex-col gap-2 bg-opacity-50">
-        <div class="group relative rounded-t-md bg-cod-gray-900 bg-opacity-50 px-4 py-1">
-          <div
-            class="absolute left-0 top-0 z-0 h-full w-0 rounded-t-md bg-cod-gray-800 transition-all duration-1000 group-hover:w-full">
-          </div>
-          <span class="relative z-10">About</span>
-        </div>
+      <WindowCard title="About">
         <main class="flex flex-col gap-4 p-4 tracking-tight">
           <p class="text-justify">
             I'm Akbar Hendra Jaya also known as UnknownRori a second year
@@ -83,7 +71,13 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
             site, you will also find resume and link to my social media network
           </p>
         </main>
-      </CardVue>
+      </WindowCard>
+
+      <WindowCard title="Feed">
+        <main class="flex flex-col gap-4 p-4 tracking-tight">
+          Currently Not Available
+        </main>
+      </WindowCard>
     </section>
   </div>
 </template>
