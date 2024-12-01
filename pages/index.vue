@@ -15,39 +15,69 @@ const experienceYear = new Date().getUTCFullYear() - 2019;
 <template>
   <div class="m-8 flex gap-4 sm:flex-col xl:flex-row">
     <div
-      class="animate-l-border-start border-l-8 border-r-2 border-cod-gray-200 px-[2px] duration-1000 sm:hidden xl:block">
-    </div>
+      class="animate-l-border-start border-l-8 border-r-2 border-cod-gray-200 px-[2px] duration-1000 sm:hidden xl:block"
+    ></div>
     <section>
-      <WindowCard title="Profile" class="flex flex-col justify-center font-light sm:w-full xl:w-[24vw]">
+      <WindowCard
+        title="Profile"
+        class="flex flex-col justify-center font-light sm:w-full xl:w-[24vw]"
+      >
         <div class="flex flex-col gap-2 p-4">
           <figure class="flex flex-col items-center">
-            <NuxtImg src="/image/UnknownRori.webp" sizes="sm:30vw md:25vw lg:300px"
-              class="h-28 w-28 rounded-full object-cover" placeholder />
+            <NuxtImg
+              src="/image/UnknownRori.webp"
+              sizes="sm:30vw md:25vw lg:300px"
+              class="size-28 rounded-full object-cover"
+              placeholder
+            />
             <h1 class="text-2xl font-medium tracking-wide antialiased">
               UnknownRori
             </h1>
             <h3 class="text-sm tracking-tight">@UnknownRori / Akbar</h3>
           </figure>
-          <div class="bg-gray-700 bg-opacity-25 p-[1px] w-100" aria-label="line"></div>
+          <div
+            class="w-100 bg-gray-700 bg-opacity-25 p-px"
+            aria-label="line"
+          ></div>
           <div class="flex flex-col sm:self-center xl:self-start">
             <span class="flex items-center gap-1">
-              <BuildingIcon class="h-4 w-4 text-white" :font-controlled="false" filled />
+              <BuildingIcon
+                class="size-4 text-white"
+                :font-controlled="false"
+                filled
+              />
               Amikom Surakarta
             </span>
             <span class="flex items-center gap-1">
-              <LocationIcon class="h-4 w-4 text-white" :font-controlled="false" filled />
+              <LocationIcon
+                class="size-4 text-white"
+                :font-controlled="false"
+                filled
+              />
               Indonesia
             </span>
             <span class="flex items-center gap-1">
-              <ClockIcon class="h-4 w-4 text-white" :font-controlled="false" filled />
+              <ClockIcon
+                class="size-4 text-white"
+                :font-controlled="false"
+                filled
+              />
               {{ clock }}
             </span>
             <span class="flex items-center gap-1">
-              <LoveIcon class="h-4 w-4 text-white" :font-controlled="false" filled />
+              <LoveIcon
+                class="size-4 text-white"
+                :font-controlled="false"
+                filled
+              />
               Coding, Games
             </span>
             <span class="flex items-center gap-1">
-              <ChatIcon class="h-4 w-4 text-white" :font-controlled="false" filled />
+              <ChatIcon
+                class="size-4 text-white"
+                :font-controlled="false"
+                filled
+              />
               English, Indonesian
             </span>
           </div>

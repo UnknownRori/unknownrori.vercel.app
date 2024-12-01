@@ -11,7 +11,7 @@ defineProps<{
     <a
       :href="$props.href"
       target="_blank"
-      class="group flex h-full w-full flex-col"
+      class="group flex size-full flex-col"
     >
       <div
         class="relative flex items-center justify-center rounded-t-md bg-cod-gray-900 bg-opacity-50 px-4 py-1"

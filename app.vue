@@ -7,7 +7,11 @@ const isUwU = ref("uwu" in route.query && route.query.uwu === "true");
 
 <template>
   <div :class="isUwU ? 'font-[Yuruka]' : ''">
-    <LoadingScreenVue v-if="!isRaw" :show="!isDummyLoadingDone" @done="isDummyLoadingDone = true" />
+    <LoadingScreenVue
+      v-if="!isRaw"
+      :show="!isDummyLoadingDone"
+      @done="isDummyLoadingDone = true"
+    />
 
     <Transition v-if="!isRaw">
       <NuxtLayout name="default-layout">

@@ -11,7 +11,7 @@ const isOpen = ref(false);
     class="flex h-8 items-center justify-center gap-2 xl:motion-safe:hover:animate-spin"
     @click="isOpen = true"
   >
-    <SettingsIcon class="m-0 h-8 w-8 p-0" :font-controlled="false" filled />
+    <SettingsIcon class="m-0 size-8 p-0" :font-controlled="false" filled />
     <span class="sm:block md:hidden">Preferences</span>
   </button>
 
@@ -27,7 +27,7 @@ const isOpen = ref(false);
 
         <button class="absolute right-0 top-0" @click="isOpen = false">
           <CloseIcon
-            class="h-8 w-8 text-cod-gray-800 duration-300 hover:text-white"
+            class="size-8 text-cod-gray-800 duration-300 hover:text-white"
             :font-controlled="false"
             filled
           />
@@ -39,7 +39,7 @@ const isOpen = ref(false);
             <label for="display-type" class="flex gap-1">
               Display type
               <InfoIcon
-                class="h-4 w-4 text-white"
+                class="size-4 text-white"
                 :font-controlled="false"
                 filled
               />
@@ -58,7 +58,7 @@ const isOpen = ref(false);
             <label for="colorscheme" class="flex gap-1">
               Colorscheme
               <InfoIcon
-                class="h-4 w-4 text-white"
+                class="size-4 text-white"
                 :font-controlled="false"
                 filled
               />

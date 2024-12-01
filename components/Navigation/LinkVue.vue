@@ -46,8 +46,8 @@ watch(
           isActive
             ? 'text-white'
             : $props.disabled
-            ? 'text-cod-gray-800'
-            : 'text-cod-gray-400 hover:text-white'
+              ? 'text-cod-gray-800'
+              : 'text-cod-gray-400 hover:text-white'
         } `"
         :font-controlled="false"
         filled
@@ -74,8 +74,8 @@ watch(
           isActive
             ? 'text-white'
             : $props.disabled
-            ? 'text-cod-gray-800'
-            : 'text-cod-gray-400'
+              ? 'text-cod-gray-800'
+              : 'text-cod-gray-400'
         } `"
         :font-controlled="false"
         filled
