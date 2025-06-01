@@ -1,5 +1,7 @@
 <script setup lang='ts'>
 import { CardAngled } from '@/components/ui/angled';
+import ItchIo from '@/components/ui/icons/ItchIo.vue';
+import Steam from '@/components/ui/icons/Steam.vue';
 
 import { Github, Youtube, Instagram, Linkedin } from 'lucide-vue-next';
 </script>
@@ -33,6 +35,14 @@ import { Github, Youtube, Instagram, Linkedin } from 'lucide-vue-next';
         <a href="https://www.linkedin.com/in/unknownrori" target="_blank" class="text-gray-400
           hover:text-white duration-500">
           <Linkedin class='w-5 h-5' />
+        </a>
+        <a href="https://unknownrori.itch.io/" target="_blank" class="text-gray-400
+          hover:text-white duration-500">
+          <ItchIo class='w-5 h-5' />
+        </a>
+        <a href="https://steamcommunity.com/id/UnknownRori/" target="_blank" class="text-gray-400
+          hover:text-white duration-500">
+          <Steam class='w-5 h-5' />
         </a>
       </div>
     </div>
