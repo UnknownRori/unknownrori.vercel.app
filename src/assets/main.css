@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Wallpoet";
+  src: url("$fonts/Wallpoet-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ComicNeue";
+  src: url("$fonts/ComicNeue-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ComicNeue";
+  src: url("$fonts/ComicNeue-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ComicNeue";
+  src: url("$fonts/ComicNeue-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "ComicNeue";
+  src: url("$fonts/ComicNeue-LightItalic.ttf");
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "ComicNeue";
+  src: url("$fonts/ComicNeue-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@theme {
+  --font-sans: "ComicNeue", "sans-serif", "monospace";
+  --font-poet: "Wallpoet", "sans-serif", "monospace";
+
+  --breakpoint-sm: 280px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1920px;
+  --breakpoint-2xl: 2024;
+}
