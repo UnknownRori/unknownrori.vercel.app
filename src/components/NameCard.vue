@@ -14,7 +14,7 @@ import { Github, Youtube, Instagram, Linkedin } from 'lucide-vue-next';
         Akbar Hendra Jaya
       </span>
       <span class="italic text-md">
-        @UnknownRori / Lilith Itou
+        @UnknownRori
       </span>
       <span class="italic text-sm">
         Web Dev, Game Dev, Pixel Artist, VGM Composer

@@ -11,7 +11,7 @@ import { useRoute } from 'vue-router';
     <NavigationBar :class='`duration-1000 ${useRoute().name == "Splash" ? "translate-y-[52vh]" : ""}`' />
     <SettingsParent />
 
-    <div class="w-screen h-screen absolute">
+    <div class="w-screen h-screen absolute overflow-x-hidden">
       <slot />
     </div>
 

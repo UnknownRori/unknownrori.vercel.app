@@ -8,7 +8,7 @@ import {
 
 <template>
   <div class="absolute inset-0 flex w-screen h-screen justify-center items-center sm:px-4 sm:py-24 md:p-24">
-    <Card class="flex flex-col gap-4 w-full h-full overflow-scroll">
+    <Card class="flex flex-col gap-4 w-full h-full overflow-y-scroll">
       <div :key='data.name' v-for='data in projectLists' class="flex sm:flex-col lg:flex-row gap-4
         items-stretch">
         <img :src="data.imgUrl" :alt="data.name" class="object-cover sm:w-full lg:w-[500px] h-[300px]">

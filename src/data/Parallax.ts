@@ -56,7 +56,7 @@ export const parallaxSceneData = [
   // Lilith [2]
   {
     position: {
-      x: 200,
+      x: 225,
       y: 280,
       zoom: 2,
     },

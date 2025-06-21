@@ -49,3 +49,26 @@
   --breakpoint-xl: 1920px;
   --breakpoint-2xl: 2024;
 }
+
+:root {
+  --scroll-opacity: 0.50;
+
+  scrollbar-color: rgba(221, 221, 221, var(--scroll-opacity)) rgba(58, 58, 58, var(--scroll-scroll-opacity)) !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(221, 221, 221, var(--scroll-opacity));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(46, 54, 69, var(--scroll-opacity));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(58, 58, 58, var(--scroll-opacity));
+}
