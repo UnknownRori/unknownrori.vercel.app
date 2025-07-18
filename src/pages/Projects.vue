@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+import { Github, ExternalLink } from 'lucide-vue-next';
 import { Card } from '@/components/ui/card';
 import { Tag } from '@/components/ui/icons';
 import {
@@ -13,9 +14,19 @@ import {
         items-stretch">
         <img :src="data.imgUrl" :alt="data.name" class="object-cover sm:w-full lg:w-[500px] h-[300px]">
         <div class="flex flex-col gap-2">
-          <h1 class="text-lg font-bold text-white">
-            {{ data.name }}
-          </h1>
+          <div class="flex gap-2 items-center">
+            <h1 class="text-lg font-bold text-white">
+              {{ data.name }}
+            </h1>
+            <a v-if='data.sourceUrl' :href="data.sourceUrl">
+              <Github class="text-gray-400
+          hover:text-white duration-500 w-4 h-4" />
+            </a>
+            <a v-if='data.previewUrl' :href="data.previewUrl">
+              <ExternalLink class="text-gray-400
+          hover:text-white duration-500 w-4 h-4" />
+            </a>
+          </div>
           <p class="text-white">
             {{ data.description }}
           </p>
