@@ -50,6 +50,14 @@
   --breakpoint-2xl: 2024;
 }
 
+@layer components {
+  .border-pixel {
+    border-width: 128px;
+    border-style: solid;
+    border-image: url('/assets/icons/border.png') 172 space;
+  }
+}
+
 :root {
   --scroll-opacity: 0.50;
 
