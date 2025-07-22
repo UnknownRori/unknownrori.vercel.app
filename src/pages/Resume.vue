@@ -31,7 +31,7 @@ function print() {
         <a href="https://github.com/UnknownRori" class='flex gap-2 text-sm'>
           <Github class="text-black w-4" /> <span class='text-blue-500'>UnknownRori</span>
         </a>
-        <a href="https://unknownrori-lilith.vercel.app/" class='flex gap-2 text-sm'>
+        <a href="https://unknownrori.vercel.app/" class='flex gap-2 text-sm'>
           <Link class="text-black w-4" /> <span class='text-blue-500'>unknownrori.vercel.app</span>
         </a>
         <a href="mailto:unknownrori@proton.me" class='flex gap-2 text-sm'>
