@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NavLink from './NavLink.vue';
+import RawNavLink from './RawNavLink.vue';
 import { cn } from '@/utils';
 //import { Hamburger } from '@/components/ui/icons';
 import { useRoute } from 'vue-router';
@@ -22,14 +23,6 @@ const links = [
     name: 'Resume',
     href: '/resume',
   },
-  //{
-  //  name: 'Social',
-  //  href: '/social',
-  //},
-  //{
-  //  name: 'Blog',
-  //  href: '/blog',
-  //},
 ]
 </script>
 
@@ -42,6 +35,13 @@ const links = [
             lg:text-xl font-bold duration-300`)' :isActive='route.name == link.name'>
             {{ link.name }}
           </NavLink>
+        </li>
+
+        <li>
+          <RawNavLink href='https://blog-unknownrori.vercel.app' :class='cn(`text-white/50 hover:text-white sm:text:md md:text-lg
+            lg:text-xl font-bold duration-300`)'>
+            Blog
+          </RawNavLink>
         </li>
       </ul>
 
