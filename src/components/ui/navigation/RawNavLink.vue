@@ -12,7 +12,7 @@ defineProps<{
   <div class="relative group font-poet">
     <span :class="cn(`absolute -bottom-1 left-0 z-10 h-[2px] w-0 bg-white/20 dark:bg-white
 duration-500`, isActive ? 'w-full bg-white ' : 'group-hover:w-full group-hover:bg-white ')"></span>
-    <a :to="href" :class="`tracking dark:text-white ${isActive ? `font-bold text-white
+    <a :href="href" :class="`tracking dark:text-white ${isActive ? `font-bold text-white
 text-shadow-lg text-shadow-white/20 animate-pulse` : ''}`">
       <slot />
     </a>
