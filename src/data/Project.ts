@@ -12,16 +12,6 @@ export const projectLists = [
     previewUrl: 'https://unknownrori.itch.io/escape-velocity',
   },
   {
-    name: 'Rin',
-    description: 'Minimalistic PHP Framework inspired by Laravel elegantness',
-    type: 'web',
-    tags: ['Web', 'PHP', 'Framework'],
-
-    imgUrl: 'https://opengraph.githubassets.com/220e217e0f31a920a690f709c3ad7a05f57eb373407557687f3f99c846d0c155/UnknownRori/rin',
-    sourceUrl: 'https://github.com/UnknownRori/Rin',
-    previewUrl: null,
-  },
-  {
     name: 'CLI Video Player',
     description: 'Terminal Video Player written in Rust, it\'s render video on Terminal',
     type: 'app',
@@ -32,14 +22,14 @@ export const projectLists = [
     previewUrl: 'https://youtu.be/1PNJHKkE3QI?si=rDZZ2hwC7u1l7Krp',
   },
   {
-    name: 'Monas Jas Hujan - Project Kurenai',
-    description: 'Company website',
-    type: 'web',
-    tags: ['Web', 'SSR', 'Laravel', 'Bootstrap'],
+    name: 'Kosuzu Want Peace',
+    description: 'Touhou Game Jam 2026',
+    type: 'game',
+    tags: ['Collaboration', 'GDevelop', 'Krita', 'FL Studio', 'Musescore'],
 
-    imgUrl: '/image/1745666623750.jpg',
+    imgUrl: 'https://img.itch.zone/aW1nLzI1Njg3Njc2LnBuZw==/315x250%23c/kYmU1s.png',
     sourceUrl: null,
-    previewUrl: 'https://monasjashujan.com/',
+    previewUrl: 'https://raykeju.itch.io/kosuzu-game',
   },
   {
     name: 'Touhou Unfinished Matrix Dream',
@@ -50,6 +40,16 @@ export const projectLists = [
     imgUrl: 'https://f4.bcbits.com/img/a3227884736_16.jpg',
     sourceUrl: null,
     previewUrl: 'https://open.spotify.com/album/1XOjB6SruP6ZhWjGJ6SSls',
+  },
+  {
+    name: 'Monas Jas Hujan - Project Kurenai',
+    description: 'Company website',
+    type: 'web',
+    tags: ['Web', 'SSR', 'Laravel', 'Bootstrap'],
+
+    imgUrl: '/image/1745666623750.jpg',
+    sourceUrl: null,
+    previewUrl: 'https://monasjashujan.com/',
   },
   {
     name: 'Schmhotel',
@@ -69,6 +69,16 @@ export const projectLists = [
 
     imgUrl: 'https://raw.githubusercontent.com/UnknownRori/touhourad/main/screenshot/Screenshot_20240921-161100.png',
     sourceUrl: 'https://github.com/UnknownRori/touhourad',
+    previewUrl: null,
+  },
+  {
+    name: 'Rin',
+    description: 'Minimalistic PHP Framework inspired by Laravel elegantness',
+    type: 'web',
+    tags: ['Web', 'PHP', 'Framework'],
+
+    imgUrl: 'https://opengraph.githubassets.com/220e217e0f31a920a690f709c3ad7a05f57eb373407557687f3f99c846d0c155/UnknownRori/rin',
+    sourceUrl: 'https://github.com/UnknownRori/Rin',
     previewUrl: null,
   },
 ] as Project[];

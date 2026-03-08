@@ -35,12 +35,12 @@ const project = [
     ],
   },
   {
-    title: 'Rin',
-    link: 'https://github.com/UnknownRori/Rin',
-    description: 'Minimalistic PHP Web Framework inspired by Laravel',
-    time: '2024',
+    title: 'Kosuzu Want Peace',
+    link: 'https://raykeju.itch.io/kosuzu-game',
+    description: 'Collaboration project for Touhou Game Jam 2026',
+    time: '2026',
     tags: [
-      'PHP', 'Framework'
+      'GDevelop', 'FL Studio', 'MuseScore',
     ],
   },
   {
@@ -50,6 +50,15 @@ const project = [
     time: '2023',
     tags: [
       'Rust', 'HTTP Protocol'
+    ],
+  },
+  {
+    title: 'Rin',
+    link: 'https://github.com/UnknownRori/Rin',
+    description: 'Minimalistic PHP Web Framework inspired by Laravel',
+    time: '2024',
+    tags: [
+      'PHP', 'Framework'
     ],
   },
   //{
