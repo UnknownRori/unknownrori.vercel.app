@@ -1,3 +1,0 @@
-<template>
-  Social
-</template>

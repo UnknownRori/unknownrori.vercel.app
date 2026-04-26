@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { BaseLayout } from '@/layouts';
-import { LoadingScreen } from '@/components';
 import { RouterView } from 'vue-router';
-import { BlinkTransition } from '@/components/ui/animation';
 const isDone = ref(true);
 </script>
 
@@ -12,9 +10,7 @@ const isDone = ref(true);
     <LoadingScreen :show='isDone' @done='() => isDone = false' />
     <RouterView v-slot='{ Component }'>
       <KeepAlive>
-        <BlinkTransition>
-          <component :is='Component' />
-        </BlinkTransition>
+        <component :is='Component' />
       </KeepAlive>
     </RouterView>
   </BaseLayout>
