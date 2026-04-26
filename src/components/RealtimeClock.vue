@@ -5,11 +5,12 @@ defineProps<{
   class: string,
 }>();
 
-const clock = useRealtimeClock();
+const strClock = useRealtimeClock();
+const clock = strClock.value.split(':');
 </script>
 
 <template>
   <span :class='$props.class'>
-    {{clock}}
+    {{clock[0]}} <span class='animate-blink'>:</span>  {{clock[1]}}
   </span>
 </template>

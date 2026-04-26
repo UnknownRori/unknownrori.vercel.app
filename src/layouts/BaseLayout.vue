@@ -16,7 +16,7 @@ import { BackgroundComponent } from '@/components/ui/background';
 
     <Footer />
     <RealtimeClock
-      class='absolute right-0 bottom-0 mb-12 mr-16 text-4xl text-whiteanimate-pulse'
+      class='absolute right-0 bottom-0 mb-12 mr-16 text-4xl text-white'
     />
   </div>
 </template>

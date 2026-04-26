@@ -15,6 +15,19 @@
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1920px;
   --breakpoint-2xl: 2024;
+
+  --animate-blink: blink 1s infinite;
+
+  @keyframes blink {
+    0% {
+      opacity: 0%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+
 }
 
 @layer components {
