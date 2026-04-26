@@ -1,1 +1,1 @@
-export { default as SplashPage } from './Splash.vue';
+export { default as SplashPage } from './SplashPage.vue';

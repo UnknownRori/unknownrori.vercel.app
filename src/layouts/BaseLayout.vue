@@ -1,17 +1,22 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-import {BackgroundComponent} from '@/components/ui/background';
+import { RealtimeClock } from '@/components';
+import { NavigationBar, Footer } from '@/components/ui/navigation';
+import { BackgroundComponent } from '@/components/ui/background';
 </script>
 
 <template>
   <div class="relative h-screen w-screen">
 
     <BackgroundComponent />
+    <NavigationBar />
 
     <div class="w-screen h-screen absolute overflow-x-hidden">
       <slot />
     </div>
 
     <Footer />
+    <RealtimeClock
+      class='absolute right-0 bottom-0 mb-12 mr-16 text-4xl text-whiteanimate-pulse'
+    />
   </div>
 </template>
