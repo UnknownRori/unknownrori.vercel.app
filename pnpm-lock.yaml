@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@lucide/vue':
+        specifier: ^1.11.0
+        version: 1.11.0(vue@3.5.33(typescript@5.8.3))
       '@tailwindcss/vite':
         specifier: ^4.2.4
         version: 4.2.4(vite@6.4.2(@types/node@22.19.17)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.2))
@@ -861,6 +864,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@lucide/vue@1.11.0':
+    resolution: {integrity: sha512-ISNBw5Xm7cwfwMQ/sEYelzBCpBnpIcAJUUfIBV62Q6fL10WIEZBrVho1tjragziFTVImDupJYzWozxRn55Fc1g==}
+    peerDependencies:
+      vue: '>=3.0.1'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3928,6 +3936,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@lucide/vue@1.11.0(vue@3.5.33(typescript@5.8.3))':
+    dependencies:
+      vue: 3.5.33(typescript@5.8.3)
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
