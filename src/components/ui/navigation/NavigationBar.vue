@@ -1,20 +1,24 @@
 <script lang="ts" setup>
 import NavLink from './NavLink.vue'
 
+const navlinks = [
+  { name: 'Home', href:'/Home', isActive: true },
+  { name: 'Profile', href:'/profile' },
+  { name: 'Works', href:'/projects' },
+  { name: 'Contacts', href:'/projects' }
+]
+
 </script>
 
 <template>
-  <!-- TODO:
-    Refactor NavLink so it only accept icon, and also extract this into seperate file for
-    easy addition
-  -->
-  <nav class="absolute flex ml-16 mt-8 gap-4">
-    <NavLink href='/profile'>
-      <img src="/assets/icons/home-icon.webp" alt="Home" class="w-6 h-6">
-    </NavLink>
-
-    <NavLink href='/projects'>
-      <img src="/assets/icons/project-icon.webp" alt="Home" class="w-6 h-6">
-    </NavLink>
+  <nav class="absolute flex justify-center items-center w-screen mt-8 z-100">
+    <div class="border-2 border-gray-500 hover:border-white duration-500 rounded-lg py-2 px-4 flex gap-6">
+    <NavLink v-for='item in navlinks'
+      v-bind:key='item.name'
+      :name='item.name'
+      :href='item.href'
+      :isActive='item.isActive ?? false'
+    />
+    </div>
   </nav>
 </template>
