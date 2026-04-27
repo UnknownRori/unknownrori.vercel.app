@@ -10,7 +10,7 @@ const {isMobile}  = useDevice();
 <template>
   <div class="relative flex md:flex-row sm:flex-col w-screen h-screen items-center">
     <div class="w-full h-full flex justify-items-center justify-center items-center">
-      <WindowBase title="PROFILE.TXT" class="min-w-75 min-h-75"
+      <WindowBase title="PROFILE.TXT" class="md:min-w-75 sm:h-auto md:min-h-75"
         :draggable="!isMobile">
         <p class="text-3xl">
           Akbar Hendra Jaya
