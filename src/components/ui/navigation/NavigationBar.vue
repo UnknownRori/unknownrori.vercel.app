@@ -52,7 +52,7 @@ watch(() => route.path, syncPill);
     >
       <NavPill :size="pillSize" :position="pillPos" />
       <NavLink
-        v-for="(item) in navlinks"
+        v-for="(item, i) in navlinks"
         :key="item.name"
         :ref="(el: any) => btnRefs[i] = el"
         :name="item.name"

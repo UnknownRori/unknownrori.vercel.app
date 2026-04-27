@@ -7,6 +7,7 @@ import { BackgroundComponent } from '@/components/ui/background';
 <template>
   <div class="relative h-screen w-screen">
 
+    <div class="crt-overlay"></div>
     <BackgroundComponent />
     <NavigationBar />
 
