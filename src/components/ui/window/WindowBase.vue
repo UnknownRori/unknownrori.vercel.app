@@ -1,10 +1,12 @@
 <script lang="ts" setup>
+import { cn } from '@/utils';
 import { Vector2 } from '@/maths/vector2';
 import useDraggable from '@/composable/useDraggable';
 import WindowBar from './WindowBar.vue';
 
 const props = defineProps<{
   title: string,
+  normal?: boolean,
   draggable?: boolean,
   startPosition?: Vector2,
 }>();
@@ -17,8 +19,8 @@ const {
 </script>
 
 <template>
-  <div class='flex flex-col bg-gray-900/20 backdrop-blur-sm text-white'
-      :style="styleObject"
+  <div class='flex flex-col bg-gray-900/20 backdrop-blur-sm text-white will-change-contents'
+    :style="normal ? {} : styleObject"
     >
     <WindowBar :title='title' class="cursor-move active:cursor-move" @mousedown='startDrag' />
 

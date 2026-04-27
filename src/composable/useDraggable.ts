@@ -22,7 +22,9 @@ export default function useDraggable(props: DraggableParams): DraggableReturnPar
   const offset = vec2(0, 0);
 
   const styleObject = computed<ComputedValue>(() => ({
-    transform: `translate(${position.value.x}px, ${position.value.y}px)`,
+    top: '0px',
+    left: '0px',
+    transform: `translate3d(${position.value.x}px, ${position.value.y}px, 0)`,
     position: 'absolute' as const,
     zIndex: 100,
   }));
