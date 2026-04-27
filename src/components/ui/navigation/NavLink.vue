@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
  <RouterLink :to='href' :class="cn(`flex justify-center items center relative group uppercase duration-500 py-1 px-3  text-gray-500
- hover:text-white hover:cursor-pointer`, isActive ? 'hover:text-black text-black bg-white rounded-lg' : '')">
+ hover:text-white hover:cursor-pointer`, isActive ? 'hover:text-black text-black' : '')">
     <span :class="cn(`absolute top-0 left-0 z-10 h-0.5 w-0 bg-white/20 dark:bg-white
 duration-500`, isActive ? 'w-0 bg-white ' : 'group-hover:w-full group-hover:bg-white ')"></span>
     {{ name }}
