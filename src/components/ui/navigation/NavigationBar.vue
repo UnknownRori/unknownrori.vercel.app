@@ -1,8 +1,10 @@
 <script lang="ts" setup>
+import { useRoute } from 'vue-router';
 import NavLink from './NavLink.vue'
 
+const route = useRoute();
 const navlinks = [
-  { name: 'Home', href:'/Home', isActive: true },
+  { name: 'Home', href:'/' },
   { name: 'Profile', href:'/profile' },
   { name: 'Works', href:'/projects' },
   { name: 'Contacts', href:'/projects' }
@@ -17,7 +19,7 @@ const navlinks = [
       v-bind:key='item.name'
       :name='item.name'
       :href='item.href'
-      :isActive='item.isActive ?? false'
+      :isActive='route.name == item.name'
     />
     </div>
   </nav>
