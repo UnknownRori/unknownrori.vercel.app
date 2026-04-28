@@ -1,4 +1,4 @@
-export type ProjectType = 'music' | 'game' | 'web' | 'app' | 'library';
+export type ProjectType = 'music' | 'game' | 'web' | 'app' | 'library' | 'artwork';
 
 export interface Project {
   name: string,
