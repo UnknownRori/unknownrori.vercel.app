@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+* {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Rori";
   src: url("$fonts/Rori.ttf");
@@ -53,6 +57,7 @@
     background-size: 100% 4px, 3px 100%;
     pointer-events: none;
     z-index: 200;
+    animation: flicker 1s ease-in-out infinite
   }
 
 }
@@ -68,6 +73,7 @@
 @keyframes flicker {
   0% {
     opacity: 0.27861;
+    background-position: 0 0;
   }
 
   5% {
@@ -80,6 +86,7 @@
 
   100% {
     opacity: 0.25619;
+    background-position: 0 100%;
   }
 }
 
@@ -96,27 +103,4 @@
   z-index: 2;
   pointer-events: none;
   animation: flicker 0.15s infinite;
-}
-
-:root {
-  --scroll-opacity: 0.50;
-
-  scrollbar-color: rgba(221, 221, 221, var(--scroll-opacity)) rgba(58, 58, 58, var(--scroll-scroll-opacity)) !important;
-  scrollbar-width: thin !important;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(221, 221, 221, var(--scroll-opacity));
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(46, 54, 69, var(--scroll-opacity));
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(58, 58, 58, var(--scroll-opacity));
 }
