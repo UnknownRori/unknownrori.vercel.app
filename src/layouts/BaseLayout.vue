@@ -1,13 +1,21 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import { RealtimeClock } from '@/components';
 import { NavigationBar, Footer } from '@/components/ui/navigation';
 import { BackgroundComponent } from '@/components/ui/background';
+import { LoadingScreen } from '@/components';
+
+const isDone = ref(true);
+function setDone() {
+  isDone.value = false;
+}
 </script>
 
 <template>
   <div class="relative h-screen w-screen">
 
     <div class="crt-overlay"></div>
+    <LoadingScreen :show='isDone' @done='() => setDone()' />
     <BackgroundComponent />
     <NavigationBar />
 

@@ -2,6 +2,7 @@
 import { BaseLayout } from '@/layouts';
 import { RouterView } from 'vue-router';
 import BlinkTransition from '@/components/ui/animation/BlinkTransition.vue';
+import { LoadingScreen } from '@/components';
 </script>
 
 <template>
