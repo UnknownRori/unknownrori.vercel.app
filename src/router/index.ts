@@ -1,4 +1,4 @@
-import { ProfilePage, SplashPage } from '@/pages';
+import { ProfilePage, SplashPage, WorkPage } from '@/pages';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -14,6 +14,12 @@ const router = createRouter({
       path: "/profile",
       name: "Profile",
       component: ProfilePage,
+      meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:py-52 sm:px-4 md:py-72 md:px-12 lg:py-52 lg:px-82' },
+    },
+    {
+      path: "/projects",
+      name: "Work",
+      component: WorkPage,
       meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:py-52 sm:px-4 md:py-72 md:px-12 lg:py-52 lg:px-82' },
     },
   ]

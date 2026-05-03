@@ -113,8 +113,20 @@ export const projectLists = [
   },
 ] as Project[];
 
-export const projectAppList = projectLists.filter((project) => project.type === 'app');
-export const projectGameList = projectLists.filter((project) => project.type === 'game');
-export const projectMusicList = projectLists.filter((project) => project.type === 'music');
-export const projectWebList = projectLists.filter((project) => project.type === 'web');
-export const projectArtworkList = projectLists.filter((project) => project.type === 'artwork');
+type Grouped<T extends { type: string }> = Record<
+  string,
+  { type: string; items: T[] }
+>;
+
+export const projects = projectLists.reduce<Grouped<Project>>((acc, item) => {
+  if (!acc[item.type]) {
+    acc[item.type] = {
+      type: item.type,
+      items: [],
+    };
+  }
+
+  acc[item.type].items.push(item);
+  return acc;
+}, {})
+
