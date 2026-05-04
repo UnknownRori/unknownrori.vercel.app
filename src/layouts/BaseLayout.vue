@@ -12,14 +12,14 @@ function setDone() {
 </script>
 
 <template>
-  <div class="relative h-screen w-screen">
+  <div class="relative h-screen print:h-auto w-screen">
 
     <div class="crt-overlay print:hidden"></div>
     <LoadingScreen :show='isDone' @done='() => setDone()' />
     <BackgroundComponent />
     <NavigationBar />
 
-    <div class="w-screen h-screen absolute overflow-x-hidden">
+    <div class="w-screen h-screen print:h-auto absolute overflow-x-hidden">
       <slot />
     </div>
 

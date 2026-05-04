@@ -26,7 +26,8 @@ const { elRef, startDrag, styleObject, placeholderStyle, hasBeenDragged } = useD
       ref="elRef"
       :class="cn(
         'flex flex-col bg-gray-900/20 backdrop-blur-sm text-white will-change-contents',
-        $props.class
+        hasBeenDragged ? 'print:hidden' : '',
+        $props.class,
       )"
       :style="styleObject"
     >

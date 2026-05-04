@@ -1,7 +1,7 @@
 import type { Quote } from "@/models/Quote";
 
-const BASE_API_URL_QUOTES = "https://quoteslate.vercel.app";
-const RANDOM_QUOTES = `${BASE_API_URL_QUOTES}/api/quotes/random`;
+const BASE_API_URL_QUOTES = "https://dummyjson.com/quotes/";
+const RANDOM_QUOTES = `${BASE_API_URL_QUOTES}/random`;
 
 export default async function(): Promise<Quote> {
   const resultFetch = await fetch(RANDOM_QUOTES);

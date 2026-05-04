@@ -1,4 +1,4 @@
-import { ProfilePage, SplashPage, WorkPage, ResumePage } from '@/pages';
+import { ProfilePage, SplashPage, WorkPage, ResumePage, NotFound } from '@/pages';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -28,6 +28,7 @@ const router = createRouter({
       component: ResumePage,
       meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:py-52 sm:px-4 md:py-72 md:px-12 lg:py-52 lg:px-82' },
     },
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
   ]
 });
 
