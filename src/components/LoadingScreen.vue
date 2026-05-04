@@ -1,6 +1,5 @@
 <script lang='ts' setup>
 import { ref, onBeforeMount, nextTick  } from 'vue';
-import { useRoute } from 'vue-router';
 
 import BlinkTransition from '@/components/ui/animation/BlinkTransition.vue';
 import { sleep } from '@/utils';

@@ -7,6 +7,8 @@ export interface Project {
   imgUrl: string,
   type: ProjectType,
 
-  sourceUrl?: string,
+  sourceCode?: string,
   previewUrl?: string,
+  pixiv?: string,
+  itchIo?: string,
 }

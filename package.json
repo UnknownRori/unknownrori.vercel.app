@@ -13,9 +13,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@lucide/vue": "^1.11.0",
+    "@lucide/vue": "^1.14.0",
     "@tailwindcss/vite": "^4.2.4",
-    "animejs": "^4.3.6",
+    "animejs": "^4.4.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.487.0",
     "moment": "^2.30.1",

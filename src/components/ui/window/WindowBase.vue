@@ -36,7 +36,8 @@ const { elRef, startDrag, styleObject, placeholderStyle, hasBeenDragged } = useD
         @mousedown="startDrag"
       />
 
-      <div class="flex-1 border-l-2 border-r-2 border-b-2 border-gray-700 p-2">
+      <div class="relative flex-1 border-l-2 border-r-2 border-b-2 border-gray-700 p-2
+        overflow-y-hidden">
         <slot />
       </div>
     </div>

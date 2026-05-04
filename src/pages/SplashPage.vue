@@ -1,6 +1,4 @@
 <script lang='ts' setup>
-import { vec2 } from '@/maths/vector2';
-import { WindowBase } from '@/components/ui/window';
 </script>
 
 <template>

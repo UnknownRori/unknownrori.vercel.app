@@ -28,7 +28,7 @@ export default function useDraggable(props: DraggableParams): DraggableReturnPar
   const offset = vec2(0, 0);
 
   const styleObject = computed<StyleValue>(() => {
-    if (!hasBeenDragged.value) return {};
+    if (!hasBeenDragged.value) return {} as StyleValue;
     return {
       position: "fixed",
       left: "0px",

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, reactive, nextTick, onMounted, watch } from 'vue';
+import { ref, reactive, nextTick, onMounted, watch, type ComponentPublicInstance } from 'vue';
 import { useRoute } from 'vue-router';
 import { type Vector2 } from '@/maths/vector2';
 import NavPill from './NavPill.vue';
@@ -10,11 +10,11 @@ const navlinks = [
   { name: 'Home',     href: '/' },
   { name: 'Profile',  href: '/profile' },
   { name: 'Works',    href: '/projects' },
-  { name: 'Contacts', href: '/contacts' },
+  { name: 'Resume', href: '/resume' },
 ];
 
 const containerRef = ref<HTMLElement | null>(null);
-const btnRefs = reactive<any[]>([]);
+const btnRefs = reactive<ComponentPublicInstance[]>([]);
 const pillSize = reactive<Vector2>({ x: 0, y: 0 });
 const pillPos  = reactive<Vector2>({ x: 0, y: 0 });
 
@@ -54,7 +54,7 @@ watch(() => route.path, syncPill);
       <NavLink
         v-for="(item, i) in navlinks"
         :key="item.name"
-        :ref="(el: any) => btnRefs[i] = el"
+        :ref="(el) => { if (el) btnRefs[i] = el as ComponentPublicInstance }"
         :name="item.name"
         :href="item.href"
         :isActive="route.path === item.href"
