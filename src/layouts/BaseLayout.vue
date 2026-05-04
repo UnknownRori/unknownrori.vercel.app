@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { RealtimeClock } from '@/components';
 import { NavigationBar, Footer } from '@/components/ui/navigation';
 import { BackgroundComponent } from '@/components/ui/background';
-import { LoadingScreen } from '@/components';
+import { RealtimeClock, LoadingScreen, AudioVisualization } from '@/components';
 
 const isDone = ref(true);
 function setDone() {
@@ -23,6 +22,7 @@ function setDone() {
       <slot />
     </div>
 
+    <AudioVisualization />
     <Footer />
     <RealtimeClock
       class='absolute right-0 bottom-0 mb-12 mr-16 text-4xl text-white print:hidden'
