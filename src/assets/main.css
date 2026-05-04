@@ -11,8 +11,21 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "ComicNeue";
+  src: url("$fonts/ComicNeue-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ComicNeue";
+  src: url("$fonts/ComicNeue-Bold.ttf");
+  font-weight: bold;
+}
+
 @theme {
   --font-sans: "Rori", "sans-serif", "monospace";
+  --font-comic: "ComicNeue", "sans-serif";
 
   --breakpoint-sm: 280px;
   --breakpoint-md: 720px;
@@ -68,7 +81,15 @@
     1px 0px 2px #a81335;
 }
 
-;
+.no-shadow * {
+  text-shadow: none !important;
+}
+
+@media print {
+  * {
+    text-shadow: none;
+  }
+}
 
 @keyframes flicker {
   0% {

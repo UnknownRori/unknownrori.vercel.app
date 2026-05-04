@@ -14,7 +14,7 @@ function setDone() {
 <template>
   <div class="relative h-screen w-screen">
 
-    <div class="crt-overlay"></div>
+    <div class="crt-overlay print:hidden"></div>
     <LoadingScreen :show='isDone' @done='() => setDone()' />
     <BackgroundComponent />
     <NavigationBar />
@@ -25,7 +25,7 @@ function setDone() {
 
     <Footer />
     <RealtimeClock
-      class='absolute right-0 bottom-0 mb-12 mr-16 text-4xl text-white'
+      class='absolute right-0 bottom-0 mb-12 mr-16 text-4xl text-white print:hidden'
     />
   </div>
 </template>

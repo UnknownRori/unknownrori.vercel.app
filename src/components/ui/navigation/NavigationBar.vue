@@ -45,7 +45,7 @@ watch(() => route.path, syncPill);
 </script>
 
 <template>
-  <nav class="absolute flex justify-center items-center w-screen mt-8 z-100">
+  <nav class="absolute flex justify-center items-center w-screen mt-8 z-100 print:hidden">
     <div
       ref="containerRef"
       class="relative border-2 border-gray-500 hover:border-white duration-500 rounded-lg py-2 px-4 flex gap-6"
