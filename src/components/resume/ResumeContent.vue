@@ -17,7 +17,8 @@ function print() {
 <template>
   <div :class="cn('font-comic text-black no-shadow flex justify-center items-center print:p-0',
   $props.class)">
-    <div class="relative bg-white w-[210mm] min-h-[297mm] p-4 print:p-0 flex flex-col gap-1
+    <div class="relative bg-white sm:w-auto sm:h-auto md:w-[210mm] md:min-h-[297mm] p-4 print:p-0
+      print:w-[210mm] print:min-h-[297mm] flex flex-col gap-1
       overflow-scroll">
       <div class="absolute inset-0 w-full h-full bg-[url(/assets/img/me.png)] bg-cover bg-center
         opacity-[2%] pointer-events-none"></div>

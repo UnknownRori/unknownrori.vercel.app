@@ -29,7 +29,6 @@ onMounted(() => {
         :src="audioSrc"
         loop
         @play="onPlay"
-        @pause="onPause"
       />
 
       <canvas
