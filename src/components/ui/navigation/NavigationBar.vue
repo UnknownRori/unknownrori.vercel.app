@@ -1,50 +1,64 @@
-<script setup lang="ts">
-import NavLink from './NavLink.vue';
-import RawNavLink from './RawNavLink.vue';
-import { cn } from '@/utils';
-//import { Hamburger } from '@/components/ui/icons';
+<script lang="ts" setup>
+import { ref, reactive, nextTick, onMounted, watch, type ComponentPublicInstance } from 'vue';
 import { useRoute } from 'vue-router';
-
-defineProps<{
-  class?: string,
-}>();
+import { type Vector2 } from '@/maths/vector2';
+import NavPill from './NavPill.vue';
+import NavLink from './NavLink.vue';
 
 const route = useRoute();
-const links = [
-  {
-    name: 'Profile',
-    href: '/profile',
-  },
-  {
-    name: 'Projects',
-    href: '/projects',
-  },
-  {
-    name: 'Resume',
-    href: '/resume',
-  },
-]
+const navlinks = [
+  { name: 'Home',     href: '/' },
+  { name: 'Profile',  href: '/profile' },
+  { name: 'Works',    href: '/projects' },
+  { name: 'Resume', href: '/resume' },
+];
+
+const containerRef = ref<HTMLElement | null>(null);
+const btnRefs = reactive<ComponentPublicInstance[]>([]);
+const pillSize = reactive<Vector2>({ x: 0, y: 0 });
+const pillPos  = reactive<Vector2>({ x: 0, y: 0 });
+
+function movePill(index: number) {
+  const btnInstance = btnRefs[index];
+  const btn = btnInstance?.$el ?? btnInstance;
+  if (!btn || !containerRef.value) return;
+  const navRect = containerRef.value.getBoundingClientRect();
+  const btnRect = btn.getBoundingClientRect();
+  pillPos.x  = btnRect.left - navRect.left - 2;
+  pillPos.y  = btnRect.top  - navRect.top - 2;
+  pillSize.x = btnRect.width;
+  pillSize.y = btnRect.height;
+}
+
+function getActiveIndex() {
+  return navlinks.findIndex(l => l.href === route.path);
+}
+
+async function syncPill() {
+  await nextTick();
+  const i = getActiveIndex();
+  if (i !== -1) movePill(i);
+}
+
+onMounted(syncPill);
+watch(() => route.path, syncPill);
 </script>
 
 <template>
-  <nav :class="cn('print:hidden absolute w-full z-100', $props.class)" key='navbar'>
-    <div class="flex justify-center items-center w-full gap-8 p-4">
-      <ul class="flex flex-row gap-4">
-        <li :key='link.name' v-for='link in links'>
-          <NavLink :href='link.href' :class='cn(`text-white/50 hover:text-white sm:text:md md:text-lg
-            lg:text-xl font-bold duration-300`)' :isActive='route.name == link.name'>
-            {{ link.name }}
-          </NavLink>
-        </li>
-
-        <li>
-          <RawNavLink href='https://blog-unknownrori.vercel.app' :class='cn(`text-white/50 hover:text-white sm:text:md md:text-lg
-            lg:text-xl font-bold duration-300`)'>
-            Blog
-          </RawNavLink>
-        </li>
-      </ul>
-
+  <nav class="absolute flex justify-center items-center w-screen mt-8 z-100 print:hidden">
+    <div
+      ref="containerRef"
+      class="relative border-2 border-gray-500 hover:border-white duration-500 rounded-lg py-2 px-4 flex gap-6"
+    >
+      <NavPill :size="pillSize" :position="pillPos" />
+      <NavLink
+        v-for="(item, i) in navlinks"
+        :key="item.name"
+        :ref="(el) => { if (el) btnRefs[i] = el as ComponentPublicInstance }"
+        :name="item.name"
+        :href="item.href"
+        :isActive="route.path === item.href"
+      />
     </div>
   </nav>
 </template>

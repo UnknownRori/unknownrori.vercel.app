@@ -1,4 +1,4 @@
-export type ProjectType = 'music' | 'game' | 'web' | 'app' | 'library';
+export type ProjectType = 'music' | 'game' | 'web' | 'app' | 'library' | 'artwork';
 
 export interface Project {
   name: string,
@@ -7,6 +7,8 @@ export interface Project {
   imgUrl: string,
   type: ProjectType,
 
-  sourceUrl?: string,
+  sourceCode?: string,
   previewUrl?: string,
+  pixiv?: string,
+  itchIo?: string,
 }

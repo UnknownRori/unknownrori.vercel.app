@@ -1,7 +1,6 @@
 <script setup lang='ts'>
 import { ref, onMounted } from 'vue';
 
-import { ArrowDown } from '@/components/ui/icons';
 import useQuote from '@/composable/useQuote.ts';
 import type { Quote } from "@/models/Quote";
 
@@ -15,12 +14,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-screen h-screen flex flex-col gap-8 justify-center items-center">
-    <div class="flex flex-col gap-2 justify-center items-center mt-auto">
-      <h1 class="text-5xl text-shadow text-shadow-white/20 font-poet text-white">
+  <div class="w-screen h-screen flex flex-col gap-8 justify-center items-center uppercase">
+    <div class="flex flex-col gap-2 justify-center items-center">
+      <h1 class="text-5xl text-shadow text-shadow-white/20 font-poet text-white animate-pulse">
         404
       </h1>
-      <h1 class="text-xl text-shadow text-shadow-white/20 font-poet text-white">
+      <h1 class="text-xl text-shadow text-shadow-white/20 font-poet text-white animate-pulse">
         Page Not Found
       </h1>
     </div>
@@ -29,15 +28,7 @@ onMounted(() => {
       <h3 class="font-poet text-lg tracking-wide">
         "{{ quote.quote }}"
       </h3>
-      <span class="italic">{{ quote.author }}</span>
-    </div>
-
-    <div class="flex flex-col gap-2 justify-center items-center mt-auto pb-8">
-      <span class="tracking-widest font-bold text-xl text-white animate-pulse duration-300 mt-auto
-      text-shadow-white/40 text-shadow-lg">
-        Scroll Down
-      </span>
-      <ArrowDown />
+      <span class="italic">'{{ quote.author }}'</span>
     </div>
   </div>
 </template>

@@ -1,7 +1,6 @@
 import { parallaxSceneData } from '@/data/Parallax';
-import { BlogPage, ProfilePage, ProjectsPage, ResumePage, SocialPage, SplashPage } from '@/pages';
-import useBackground from '@/stores/useBackground';
-import usePixelOverlayBoder from '@/stores/usePixelOverlayBorder';
+import { ProfilePage, SplashPage, WorkPage, ResumePage, NotFound } from '@/pages';
+import useParallaxBackgroundStore from '@/stores/useParallaxBackgroundStore';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -9,46 +8,39 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "Splash",
+      name: "Home",
       component: SplashPage,
-      meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:py-52 sm:px-4 md:py-72 md:px-12 lg:py-52 lg:px-82' },
+      meta: { scene: 0 },
     },
     {
       path: "/profile",
       name: "Profile",
       component: ProfilePage,
-      meta: { scene: 2, pixelOverlayPadding: 'opacity-100 sm:p-2 md:p-8' },
+      meta: { scene: 2 },
     },
     {
       path: "/projects",
-      name: "Projects",
-      component: ProjectsPage,
-      meta: { scene: 1, pixelOverlayPadding: 'opacity-100 sm:p-2 md:p-18' },
+      name: "Work",
+      component: WorkPage,
+      meta: { scene: 1 },
     },
     {
       path: "/resume",
       name: "Resume",
       component: ResumePage,
-      meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:p-2 md:p-6' },
+      meta: { scene: 4 },
     },
     {
-      path: "/social",
-      name: "Social",
-      component: SocialPage,
-      meta: { scene: 3, pixelOverlayPadding: 'opacity-100 p-2' },
-    },
-    {
-      path: "/blog",
-      name: "Blog",
-      component: BlogPage,
-      meta: { scene: 4, pixelOverlayPadding: 'opacity-100 p-2' },
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: NotFound,
+      meta: { scene: 0 },
     },
   ]
 });
 
 router.beforeEach(async function(to, _from, next) {
-  useBackground().setScene(parallaxSceneData[to.meta.scene as number]);
-  usePixelOverlayBoder().setPadding(to.meta.pixelOverlayPadding as string);
+  useParallaxBackgroundStore().setScene(parallaxSceneData[to.meta.scene as number]);
   return next();
 })
 

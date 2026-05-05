@@ -1,6 +1,6 @@
 import { parallaxImageData } from '@/data/Parallax.ts';
 import type { ImageData } from '@/models/Parallax';
-import useBackground from '@/stores/useBackground';
+import useParallaxBackgroundStore from '@/stores/useParallaxBackgroundStore';
 import { onMounted, type Ref } from 'vue';
 
 function loadImages(layers: ImageData[]): Promise<void[]> {
@@ -28,7 +28,7 @@ function loadImages(layers: ImageData[]): Promise<void[]> {
 }
 
 export default function useParallaxBackground(canvas: Ref<HTMLCanvasElement>) {
-  const parallax = useBackground();
+  const parallax = useParallaxBackgroundStore();
 
   function loop() {
     parallax.rawDraw(parallaxImageData[0], 0, 0, 1);

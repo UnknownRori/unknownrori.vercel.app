@@ -1,9 +1,13 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+* {
+  scroll-behavior: smooth;
+}
+
 @font-face {
-  font-family: "Wallpoet";
-  src: url("$fonts/Wallpoet-Regular.ttf");
+  font-family: "Rori";
+  src: url("$fonts/Rori.ttf");
   font-weight: normal;
 }
 
@@ -19,64 +23,105 @@
   font-weight: bold;
 }
 
-@font-face {
-  font-family: "ComicNeue";
-  src: url("$fonts/ComicNeue-Light.ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "ComicNeue";
-  src: url("$fonts/ComicNeue-LightItalic.ttf");
-  font-style: italic;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "ComicNeue";
-  src: url("$fonts/ComicNeue-BoldItalic.ttf");
-  font-style: italic;
-  font-weight: bold;
-}
-
 @theme {
-  --font-sans: "ComicNeue", "sans-serif", "monospace";
-  --font-poet: "Wallpoet", "sans-serif", "monospace";
+  --font-sans: "Rori", "sans-serif", "monospace";
+  --font-comic: "ComicNeue", "sans-serif";
 
   --breakpoint-sm: 280px;
   --breakpoint-md: 720px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1920px;
   --breakpoint-2xl: 2024;
+
+  --animate-blink: blink 1s infinite;
+
+  @keyframes blink {
+    0% {
+      opacity: 0%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+
 }
 
 @layer components {
-  .border-pixel {
+  .border-pattern {
     border-width: 128px;
     border-style: solid;
-    border-image: url('/assets/icons/border.png') 172 space;
+    border-image: url('/assets/icons/border.webp') 160 space;
+  }
+
+  .crt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.25) 50%),
+      linear-gradient(90deg,
+        rgba(255, 0, 0, 0.06),
+        rgba(0, 255, 0, 0.02),
+        rgba(0, 0, 118, 0.06));
+    background-size: 100% 4px, 3px 100%;
+    pointer-events: none;
+    z-index: 200;
+    animation: flicker 1s ease-in-out infinite
+  }
+
+}
+
+* {
+  text-shadow:
+    -1px 0px 2px #05a4ac,
+    1px 0px 2px #a81335;
+}
+
+.no-shadow * {
+  text-shadow: none !important;
+}
+
+@media print {
+  * {
+    text-shadow: none;
   }
 }
 
-:root {
-  --scroll-opacity: 0.50;
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+    background-position: 0 0;
+  }
 
-  scrollbar-color: rgba(221, 221, 221, var(--scroll-opacity)) rgba(58, 58, 58, var(--scroll-scroll-opacity)) !important;
-  scrollbar-width: thin !important;
+  5% {
+    opacity: 0.34769;
+  }
+
+  10% {
+    opacity: 0.23604;
+  }
+
+  100% {
+    opacity: 0.25619;
+    background-position: 0 100%;
+  }
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(221, 221, 221, var(--scroll-opacity));
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(46, 54, 69, var(--scroll-opacity));
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(58, 58, 58, var(--scroll-opacity));
+.crt-container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
 }

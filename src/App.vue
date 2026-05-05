@@ -1,15 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import { BaseLayout } from '@/layouts';
-import { LoadingScreen } from '@/components';
 import { RouterView } from 'vue-router';
-import { BlinkTransition } from '@/components/ui/animation';
-const isDone = ref(true);
+import BlinkTransition from '@/components/ui/animation/BlinkTransition.vue';
 </script>
 
 <template>
   <BaseLayout>
-    <LoadingScreen :show='isDone' @done='() => isDone = false' />
     <RouterView v-slot='{ Component }'>
       <KeepAlive>
         <BlinkTransition>

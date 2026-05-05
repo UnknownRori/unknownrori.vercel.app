@@ -1,3 +1,0 @@
-<template>
-  Blog
-</template>
