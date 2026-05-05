@@ -1,4 +1,6 @@
+import { parallaxSceneData } from '@/data/Parallax';
 import { ProfilePage, SplashPage, WorkPage, ResumePage, NotFound } from '@/pages';
+import useParallaxBackgroundStore from '@/stores/useParallaxBackgroundStore';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -8,34 +10,38 @@ const router = createRouter({
       path: "/",
       name: "Home",
       component: SplashPage,
-      meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:py-52 sm:px-4 md:py-72 md:px-12 lg:py-52 lg:px-82' },
+      meta: { scene: 0 },
     },
     {
       path: "/profile",
       name: "Profile",
       component: ProfilePage,
-      meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:py-52 sm:px-4 md:py-72 md:px-12 lg:py-52 lg:px-82' },
+      meta: { scene: 2 },
     },
     {
       path: "/projects",
       name: "Work",
       component: WorkPage,
-      meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:py-52 sm:px-4 md:py-72 md:px-12 lg:py-52 lg:px-82' },
+      meta: { scene: 1 },
     },
     {
       path: "/resume",
       name: "Resume",
       component: ResumePage,
-      meta: { scene: 0, pixelOverlayPadding: 'opacity-100 sm:py-52 sm:px-4 md:py-72 md:px-12 lg:py-52 lg:px-82' },
+      meta: { scene: 4 },
     },
-    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: NotFound,
+      meta: { scene: 0 },
+    },
   ]
 });
 
-//router.beforeEach(async function(to, _from, next) {
-//  useBackground().setScene(parallaxSceneData[to.meta.scene as number]);
-//  usePixelOverlayBoder().setPadding(to.meta.pixelOverlayPadding as string);
-//  return next();
-//})
+router.beforeEach(async function(to, _from, next) {
+  useParallaxBackgroundStore().setScene(parallaxSceneData[to.meta.scene as number]);
+  return next();
+})
 
 export default router;

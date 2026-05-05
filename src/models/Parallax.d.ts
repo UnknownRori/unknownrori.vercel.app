@@ -1,5 +1,7 @@
 export interface ImageData {
   src: string | string[],
+  offsetX: number,
+  offsetY: number,
   scrollSpeedX: number,
   scrollSpeedY: number,
   fps: number,
