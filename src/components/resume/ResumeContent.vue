@@ -3,7 +3,8 @@ import { cn } from '@/utils';
 import { Link, Mail, MapPin, Printer } from '@lucide/vue';
 import { Github } from '@/components/ui/icon';
 import { EducationItem, ProjectItem, ResumeTag as Tag, WorkExperienceItem } from '@/components/resume';
-import { workExperience, education, project, generalKnowledge, programmingLanguage, spokenLanguage } from '@/data/Resume.ts';
+import { workExperience, education, project, generalKnowledge, programmingLanguage, spokenLanguage,
+summary} from '@/data/Resume.ts';
 
 defineProps<{
   class?: string,
@@ -18,7 +19,7 @@ function print() {
   <div :class="cn('font-comic text-black no-shadow flex justify-center items-center print:p-0',
   $props.class)">
     <div class="relative bg-white sm:w-auto sm:h-auto md:w-[210mm] md:min-h-[297mm] p-4 print:p-0
-      print:w-[210mm] print:min-h-[297mm] flex flex-col gap-1
+      print:w-auto print:h-auto-0 flex flex-col gap-1
       overflow-scroll">
       <div class="absolute inset-0 w-full h-full bg-[url(/assets/img/me.png)] bg-cover bg-center
         opacity-[2%] pointer-events-none"></div>
@@ -49,13 +50,23 @@ function print() {
 
       <div>
         <h2 class="text-xl font-bold uppercase">
+          Summary
+        </h2>
+        <div class="border-t-2 border-gray-300 mb-2"></div>
+        <p>
+          {{ summary }}
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-bold uppercase">
           Work Experience
         </h2>
         <div class="border-t-2 border-gray-300 mb-2"></div>
         <ul class="flex flex-col gap-2">
           <li :key='item.title' v-for='item in workExperience'>
             <WorkExperienceItem :title='item.title' :description='item.description' :time='item.time'
-              :items='item.items' :tags='item.tags' />
+              :items='item.items' :tags='item.tags' :location='item.location' :job='item.job' />
           </li>
         </ul>
       </div>

@@ -1,27 +1,64 @@
+const summary = `
+Web Developer with 5+ years of experience in Laravel and Vue.
+Strong skill in Typescript and PHP, also interested in Game Development and Rust Programming Languages.
+Focused on clean architecture.
+`;
+
 const workExperience = [
   {
-    title: 'Freelancer',
-    description: 'Web Developer',
-    time: 'August 2023 - December 2024',
+    title: 'Monas Jas Hujan',
+    location: 'Solo',
+    job: 'Web Developer (Freelance)',
+    time: 'April 2025 - May 2025',
+    description: "As an Web Developer designing and building a company profile based on the client requirement along with content management system.",
+    link: "https://monasjashujan.com/",
+    tags: ["PHP", "Typescript", "Vue", "Laravel", "Tailwind"],
     items: [
-      "Company Website",
-      "Internet Billing Application",
-      "Student Management App",
-      "Ummad University Website",
-      "Inventory Application",
+      "Evaluating and optimizing the client requirement",
+      "Building High-quality Company Profile based on Client Requirement",
+      "Deploy production code into a server hosting",
     ],
-    tags: ["PHP", "Typescript", "Vue", "Laravel", "Tailwind", "Windows", "Linux"]
   },
   {
-    title: 'Search Engine Optimizer',
-    description: 'Internship at IDMetafora',
-    time: 'April 2021 - June 2021',
+    title: 'Universitas Muhammadiyah Madiun (Ummad)',
+    location: 'Madiun',
+    job: 'Web Developer (Freelance)',
+    time: 'January 2025 - March 2025',
+    description: "Helped Redesign Ummad's website from old looking website from 2006 to a more modern look.",
+    link: "https://ummad.ac.id/",
+    tags: ["PHP", "Wordpress"],
     items: [
-      "Content Management",
-      "Google Search Engine Optimizer",
+      "Helping on redesigning UI into more modern look",
+      "Improving SEO up to 40%"
     ],
-    tags: ["Content Management", "SEO"]
   },
+  {
+    title: 'Fibercon',
+    location: 'Solo',
+    job: 'Web Developer (Freelance)',
+    time: 'June 2024 - August 2024',
+    description: "Building a internet billing application capable of handling multiple connection and accounting system.",
+    link: null,
+    tags: ["PHP", "Typescript", "Vue", "Laravel", "Tailwind", "Mikrotik"],
+    items: [
+      "Evaluating and optimizing based on client requirement",
+      "Building a high quality system with integration of mikrotik",
+      "Building realtime data flow based on mikrotik devices",
+    ],
+  },
+  {
+    title: 'IDMETAFORA',
+    location: 'Yogyakarta',
+    job: 'Search Engine Optimizer  (Internship)',
+    time: 'April 2021 - June 2021',
+    tags: ["SEO"],
+    description: "Writing a high quality content with SEO friendly format and optimizing existing content.",
+    link: "https://idmetafora.com/",
+    items: [
+      "Writing and reviewing content before publishing",
+      "Improving SEO traffic up to 20%",
+    ],
+  }
 ];
 
 const project = [
@@ -99,5 +136,6 @@ export {
   workExperience,
   project,
   education,
+  summary,
   generalKnowledge, programmingLanguage, spokenLanguage,
 }

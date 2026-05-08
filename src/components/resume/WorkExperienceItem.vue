@@ -2,6 +2,8 @@
 import Tag from './ResumeTag.vue';
 defineProps<{
   title: string,
+  job: string,
+  location: string,
   description: string,
   time: string,
   items: string[],
@@ -13,13 +15,17 @@ defineProps<{
   <div>
     <div class="flex justify-between">
       <h3 class="font-bold">
-        {{ $props.title }}
+        {{ $props.title }} | {{ $props.location }}
       </h3>
 
       <p class="text-gray-600">
         {{ $props.time }}
       </p>
     </div>
+    <h4>
+      {{ $props.job }}
+    </h4>
+
     <p class="text-sm text-gray-500">
       {{ $props.description }}
     </p>
