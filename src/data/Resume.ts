@@ -61,6 +61,49 @@ const workExperience = [
   }
 ];
 
+const certifications = [
+  {
+    name: 'Belajar Pengembangan Aplikasi Flutter Intermediate',
+    time: 'April 11, 2025',
+    link: 'https://www.dicoding.com/certificates/JMZVEJO4QPN9'
+  },
+  {
+    name: 'Belajar Fundamental Aplikasi Flutter',
+    time: 'Feburary 1, 2025',
+    link: 'https://www.dicoding.com/certificates/KEXL795O4XG2',
+  },
+  {
+    name: 'Belajar Membuat Aplikasi Flutter untuk Pemula',
+    time: 'September 20, 2024',
+    link: 'https://www.dicoding.com/certificates/GRX5O5MDRP0M',
+  },
+  {
+    name: 'Belajar Membuat Aplikasi Flutter untuk Pemula',
+    time: 'September 20, 2024',
+    link: 'https://www.dicoding.com/certificates/GRX5O5MDRP0M',
+  },
+  {
+    name: 'Menjadi Back-End Developer Expert dengan JavaScript',
+    time: 'March 24, 2024',
+    link: 'https://www.dicoding.com/certificates/MEPJY4386P3V',
+  },
+  {
+    name: 'Belajar Fundamental Back-End dengan JavaScript',
+    time: 'December 26, 2023',
+    link: 'https://www.dicoding.com/certificates/QLZ94RYRMP5D',
+  },
+  {
+    name: 'Belajar Back-End Pemula dengan JavaScript',
+    time: 'November 18, 2023',
+    link: 'https://www.dicoding.com/certificates/QLZ94RYRMP5D',
+  },
+  {
+    name: 'Belajar Dasar Pemrograman JavaScript',
+    time: 'November 14, 2023',
+    link: 'https://www.dicoding.com/certificates/1OP81KRW8ZQK',
+  }
+];
+
 const project = [
   {
     title: 'Escape Velocity',
@@ -136,6 +179,7 @@ export {
   workExperience,
   project,
   education,
+  certifications,
   summary,
   generalKnowledge, programmingLanguage, spokenLanguage,
 }

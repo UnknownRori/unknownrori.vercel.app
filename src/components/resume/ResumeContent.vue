@@ -2,9 +2,23 @@
 import { cn } from '@/utils';
 import { Link, Mail, MapPin, Printer } from '@lucide/vue';
 import { Github } from '@/components/ui/icon';
-import { EducationItem, ProjectItem, ResumeTag as Tag, WorkExperienceItem } from '@/components/resume';
-import { workExperience, education, project, generalKnowledge, programmingLanguage, spokenLanguage,
-summary} from '@/data/Resume.ts';
+import {
+  EducationItem,
+  ProjectItem,
+  ResumeTag as Tag,
+  WorkExperienceItem,
+  CertificateItem,
+} from '@/components/resume';
+import {
+  workExperience,
+  certifications,
+  education,
+  project,
+  generalKnowledge,
+  programmingLanguage,
+  spokenLanguage,
+  summary,
+} from '@/data/Resume.ts';
 
 defineProps<{
   class?: string,
@@ -83,6 +97,20 @@ function print() {
           </li>
         </ul>
       </div>
+
+      <div>
+        <h2 class="text-xl font-bold uppercase">
+          Certifications
+        </h2>
+        <div class="border-t-2 border-gray-300 mb-2"></div>
+        <ul class="flex flex-col gap-2">
+          <li :key='item.title' v-for='item in certifications'>
+            <CertificateItem :name='item.name' :link='item.link' :time='item.time'
+              />
+          </li>
+        </ul>
+      </div>
+
 
       <div class="mt-2">
         <h2 class="text-xl font-bold uppercase">
