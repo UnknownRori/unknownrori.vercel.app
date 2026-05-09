@@ -104,7 +104,7 @@ function print() {
         </h2>
         <div class="border-t-2 border-gray-300 mb-2"></div>
         <ul class="flex flex-col gap-2">
-          <li :key='item.title' v-for='item in certifications'>
+          <li :key='item.name' v-for='item in certifications'>
             <CertificateItem :name='item.name' :link='item.link' :time='item.time'
               />
           </li>

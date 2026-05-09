@@ -3,7 +3,7 @@ import Tag from './ResumeTag.vue';
 defineProps<{
   title: string,
   description: string,
-  link: string,
+  link: string | null,
   time: string,
   tags: string[],
 }>();
