@@ -12,11 +12,14 @@ defineProps<{
 <template>
   <div>
     <div class="flex justify-between">
-      <a :href="$props.link" target="_blank">
+      <a v-if='$props.link != null' :href="$props.link" target="_blank">
         <h3 class="font-bold text-blue-700">
           {{ $props.title }}
         </h3>
       </a>
+      <h3 v-else class="font-bold">
+        {{ $props.title }}
+      </h3>
 
       <p class="text-sm text-gray-600">
         {{ $props.time }}

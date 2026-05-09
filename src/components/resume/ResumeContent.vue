@@ -67,7 +67,7 @@ function print() {
           Summary
         </h2>
         <div class="border-t-2 border-gray-300 mb-2"></div>
-        <p>
+        <p class='text-justify'>
           {{ summary }}
         </p>
       </div>

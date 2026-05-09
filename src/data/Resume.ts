@@ -36,8 +36,8 @@ const workExperience = [
     title: 'Fibercon',
     location: 'Solo',
     job: 'Web Developer (Freelance)',
-    time: 'June 2024 - August 2024',
-    description: "Building a internet billing application capable of handling multiple connection and accounting system.",
+    time: 'April 2024 - August 2024',
+    description: "Building a internet billing application capable of handling multiple connection and accounting system, along with multiple user admin, technician, and customer.",
     link: null,
     tags: ["PHP", "Typescript", "Vue", "Laravel", "Tailwind", "Mikrotik"],
     items: [
@@ -106,27 +106,45 @@ const certifications = [
 
 const project = [
   {
-    title: 'Escape Velocity',
-    link: 'https://unknownrori.itch.io/escape-velocity',
-    description: '3 Days Game Jam with Energy Theme',
-    time: '2025',
+    title: 'Touhou: Dream Matrix',
+    link: null,
+    description: 'Rogue-lite Touhou fan game with color palettes inspired by Gameboy and 8-bit Game with my very own game engine with streamlined tooling and building the executable',
+    time: '2026 - Present',
     tags: [
-      'C', 'Web Assembly', 'Raylib',
+      'Lily Engine', 'C', 'Web Assembly', 'Cross-platform',
+    ],
+  },
+  {
+    title: 'Remi-lang',
+    link: 'https://github.com/UnknownRori/remi-lang',
+    description: 'A hobby compiled programming language with C style and with Remilia Scarlet way of wording capable to be compiled to Windows and Linux via Assembly before creating executable.',
+    time: '2025 - Present',
+    tags: [
+      'Rust', 'Compiler'
     ],
   },
   {
     title: 'Kosuzu Want Peace',
     link: 'https://raykeju.itch.io/kosuzu-game',
-    description: 'Collaboration project for Touhou Game Jam 2026',
+    description: 'Touhou Game Jam 2026 collaborate with Arzummy, Derbruhniko, Raykeju with 3D Rail shooter style with crazy amount of bullet, My tasks is to provide BGM for the game and providing a feedback in development',
     time: '2026',
     tags: [
       'GDevelop', 'FL Studio', 'MuseScore',
     ],
   },
   {
+    title: 'Escape Velocity',
+    link: 'https://unknownrori.itch.io/escape-velocity',
+    description: 'Delivering game in 3 for Mini Game Jam with Energy Theme, vertical shooter with retro style feels and limited color palettes capable running both Windows, Linux, and the Web with high performance code and small binary size',
+    time: '2025',
+    tags: [
+      'C', 'Web Assembly', 'Raylib',
+    ],
+  },
+  {
     title: 'HTTP 1.1 Server',
     link: 'https://github.com/UnknownRori/codecrafters-http-server-rust',
-    description: 'HTTP 1.1 Server from scratch written in Rust',
+    description: 'HTTP 1.1 Server from scratch written in Rust capable handling multiple connection with API inspired with Express.js',
     time: '2023',
     tags: [
       'Rust', 'HTTP Protocol'
@@ -135,35 +153,50 @@ const project = [
   {
     title: 'Rin',
     link: 'https://github.com/UnknownRori/Rin',
-    description: 'Minimalistic PHP Web Framework inspired by Laravel',
-    time: '2024',
+    description: 'Minimalistic PHP Web Framework inspired by Laravel and Express.js, a simple but fast.',
+    time: '2023',
     tags: [
       'PHP', 'Framework'
     ],
   },
-  //{
-  //  title: 'Unfinished Matrix Dream',
-  //  link: 'https://unknownrori.bandcamp.com/album/unfinished-matrix-dream',
-  //  description: 'Touhou 8-Bit Gameboy Cover',
-  //  time: '2025',
-  //  tags: [
-  //    'Music', '8-Bit', 'VGM'
-  //  ],
-  //},
-  //{
-  //  title: 'Monas Jas Hujan',
-  //  link: 'https://monasjashujan.com/',
-  //  description: 'Company Website for Monas Jas Hujan',
-  //  time: '2025',
-  //  tags: [
-  //    'Laravel', 'Vue', 'Tailwind', 'Linux',
-  //  ],
-  //},
+  {
+    title: 'Raphael',
+    link: 'https://github.com/UnknownRori/raphael-zig',
+    description: 'High performant and simple to use local search engine that index your local directories, focused on Obsidian.md vault',
+    time: '2025',
+    tags: [
+      'Zig', 'Search Engine'
+    ],
+  },
+  {
+    title: 'Monas Jas Hujan',
+    link: 'https://monasjashujan.com/',
+    description: 'Company Website for Monas Jas Hujan',
+    time: '2025',
+    tags: [
+      'Laravel', 'Vue', 'Tailwind',
+    ],
+  },
+  {
+    title: 'Unfinished Matrix Dream',
+    link: 'https://unknownrori.bandcamp.com/album/unfinished-matrix-dream',
+    description: 'High quality Touhou Remix 8-Bit Gameboy Cover with real a Gameboy sound',
+    time: '2025',
+    tags: [
+      'Music', '8-Bit', 'VGM'
+    ],
+  },
 ];
 
 const education = [
   {
     title: 'Bachelor Degree in Computer',
+    link: 'https://www.amikomsolo.ac.id/',
+    time: '2025 - 2027',
+    location: 'STMIK AMIKOM Surakarta',
+  },
+  {
+    title: 'Associate Degree in Computer',
     link: 'https://www.amikomsolo.ac.id/',
     time: '2022 - 2025',
     location: 'STMIK AMIKOM Surakarta',
